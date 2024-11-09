@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 03</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="extra.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Large Screen Navbar -->
+    <header
+      id="navbar-lg"
+      class="hidden lg:block transform -translate-y-full fixed top-0 w-full bg-blue-950/50 z-50 transition-transform duration-500"
+    >
+      <nav class="w-full h-16 flex justify-between items-center">
+        <div class="flex gap-3 items-center">
+          <button class="w-10 h-10 rounded-full bg-blue-400">
+            <i class="fa-solid fa-house text-white"></i>
+          </button>
+          <h1 class="text-white text-xl">Finloan</h1>
+        </div>
+        <div
+          id="navBarTool"
+          class="w-1/2 flex justify-evenly items-center overflow-hidden"
+        >
+          <a href="index.html" class="ml-5 text-white font-bold text-sm"
+            >Home</a
+          >
+          <a href="#" class="ml-5 text-white font-bold text-sm">Loan</a>
+          <a href="about.html" class="ml-5 text-white font-bold text-sm"
+            >About</a
+          >
+          <div class="relative inline-block group">
+            <h1 class="font-bold cursor-pointer text-sm text-white">Pages</h1>
+
+            <div
+              class="w-28 absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+            >
+              <a href="Apply.html" class="text-blue-800 hover:text-red-600"
+                >Apply Loan</a
+              >
+              <a href="Element.html" class="text-blue-800 hover:text-red-600"
+                >Elements</a
+              >
+            </div>
+          </div>
+          <div class="relative inline-block group">
+            <h1 class="font-bold cursor-pointer text-sm text-white">Blog</h1>
+
+            <div
+              class="w-[80px] absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+            >
+              <a href="Blog.html" class="text-blue-800 hover:text-red-600"
+                >Blog</a
+              >
+              <a href="single.html" class="text-blue-800 hover:text-red-600"
+                >Single-Blog</a
+              >
+            </div>
+          </div>
+          <a href="FAQ.html" class="ml-5 text-white font-bold text-sm">FAQ</a>
+          <a href="contact.html" class="ml-5 text-white font-bold text-sm"
+            >CONTACT</a
+          >
+        </div>
+        <div class="flex gap-2 items-center">
+          <h2 class="text-white text-sm">
+            <i class="fa-solid fa-phone text-blue-400"></i> +10 673 567 367
+          </h2>
+          <button
+            class="border-2 border-blue-400 border-solid text-blue-200 hover:bg-blue-400 hover:text-white py-2 px-6 rounded"
+          >
+            Apply For A Loan
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- Small Screen Navbar -->
+    <header
+      id="navbar-sm"
+      class="lg:hidden transform -translate-y-full fixed top-0 w-full bg-white z-50 transition-transform duration-500"
+    >
+      <nav class="w-full bg-gray-600 h-16 flex justify-between items-center">
+        <div class="flex gap-3 items-center">
+          <button class="w-10 h-10 rounded-full bg-blue-400">
+            <i class="fa-solid fa-house text-white"></i>
+          </button>
+          <h1 class="text-white text-xl">Finloan</h1>
+        </div>
+        <menu>
+          <div class="fixedMenu" id="fixedMenu">
+            <i class="fa-solid fa-bars text-white"></i>
+          </div>
+          <div class="fixedMenu-Content" id="fixedMenuContent">
+            <a
+              href="index.html"
+              class="ml-5 hover:text-gray-600 font-bold text-sm"
+              >Home</a
+            >
+            <a href="#" class="ml-5 hover:text-gray-600 font-bold text-sm"
+              >Loan</a
+            >
+            <a
+              href="about.html"
+              class="ml-5 hover:text-gray-600 font-bold text-sm"
+              >About</a
+            >
+            <div class="relative inline-block group">
+              <h1
+                class="font-bold cursor-pointer text-sm hover:text-gray-600 ml-5"
+              >
+                Pages
+              </h1>
+
+              <div
+                class="w-28 absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+              >
+                <a href="Apply.html" class="text-blue-800 hover:text-red-600"
+                  >Apply Loan</a
+                >
+                <a href="Element.html" class="text-blue-800 hover:text-red-600"
+                  >Elements</a
+                >
+              </div>
+            </div>
+            <div class="relative inline-block group">
+              <h1
+                class="font-bold cursor-pointer text-sm hover:text-gray-600 ml-5"
+              >
+                blog
+              </h1>
+
+              <div
+                class="w-28 absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+              >
+                <a href="Blog.html" class="text-blue-800 hover:text-red-600"
+                  >Blog</a
+                >
+                <a href="single.html" class="text-blue-800 hover:text-red-600"
+                  >Single-Blog
+                </a>
+              </div>
+            </div>
+            <a
+              href="FAQ.html"
+              class="ml-5 hover:text-gray-600 font-bold text-sm"
+              >FAQ</a
+            >
+            <a
+              href="contact.html"
+              class="ml-5 hover:text-gray-600 font-bold text-sm"
+              >CONTACT</a
+            >
+          </div>
+        </menu>
+      </nav>
+    </header>
+
+    <!-- container 1 -->
+    <div class="w-full bg-[url(images/groupPic.jpg)] bg-cover bg-center">
+      <div class="w-full h-full bg-gray-950/30">
+        <!-- navbar for small screen-->
+        <div class="lg:hidden">
+          <nav class="w-full h-16 flex justify-between items-center">
+            <div class="flex gap-2 items-center">
+              <button class="w-10 h-10 rounded-full bg-blue-400">
+                <i class="fa-solid fa-house"></i>
+              </button>
+              <h1 class="text-white text-xl">Finloan</h1>
+            </div>
+            <menu>
+              <div class="menu" id="menu">
+                <i class="fa-solid fa-bars-staggered text-2xl text-white"></i>
+              </div>
+              <div class="menu-content" id="menuContent">
+                <a
+                  href="index.html"
+                  class="ml-5 hover:text-gray-600 font-bold text-sm"
+                  >Home</a
+                >
+                <a href="#" class="ml-5 hover:text-gray-600 font-bold text-sm"
+                  >Loan</a
+                >
+                <a
+                  href="about.html"
+                  class="ml-5 hover:text-gray-600 font-bold text-sm"
+                  >About</a
+                >
+                <div class="relative inline-block group">
+                  <h1
+                    class="font-bold cursor-pointer text-sm hover:text-gray-600 ml-5"
+                  >
+                    Pages
+                  </h1>
+
+                  <div
+                    class="w-28 absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+                  >
+                    <a
+                      href="Apply.html"
+                      class="text-blue-800 hover:text-red-600"
+                      >Apply Loan</a
+                    >
+                    <a
+                      href="Element.html"
+                      class="text-blue-800 hover:text-red-600"
+                      >Elements</a
+                    >
+                  </div>
+                </div>
+                <div class="relative inline-block group">
+                  <h1
+                    class="font-bold cursor-pointer text-sm hover:text-gray-600 ml-5"
+                  >
+                    blog
+                  </h1>
+
+                  <div
+                    class="w-28 absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+                  >
+                    <a href="Blog.html" class="text-blue-800 hover:text-red-600"
+                      >Blog</a
+                    >
+                    <a
+                      href="single.html"
+                      class="text-blue-800 hover:text-red-600"
+                      >Single-Blog
+                    </a>
+                  </div>
+                </div>
+                <a
+                  href="FAQ.html"
+                  class="ml-5 hover:text-gray-600 font-bold text-sm"
+                  >FAQ</a
+                >
+                <a
+                  href="contact.html"
+                  class="ml-5 hover:text-gray-600 font-bold text-sm"
+                  >CONTACT</a
+                >
+              </div>
+            </menu>
+          </nav>
+        </div>
+        <!-- navbar for large screen -->
+        <div class="hidden lg:block">
+          <nav class="w-full h-20 flex justify-between items-center px-5">
+            <div class="flex gap-2 items-center">
+              <button class="w-10 h-10 rounded-full bg-blue-400">
+                <i class="fa-solid fa-house text-white"></i>
+              </button>
+              <h1 class="text-white text-xl">Finloan</h1>
+            </div>
+            <div class="w-1/2 flex justify-evenly items-center">
+              <a href="index.html" class="ml-5 text-white font-bold text-sm"
+                >Home</a
+              >
+              <a href="#" class="ml-5 text-white font-bold text-sm">Loan</a>
+              <a href="about.html" class="ml-5 text-white font-bold text-sm"
+                >About</a
+              >
+              <div class="relative inline-block group">
+                <h1 class="font-bold cursor-pointer text-sm text-white">
+                  Pages
+                </h1>
+
+                <div
+                  class="w-28 absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+                >
+                  <a href="Apply.html" class="text-blue-800 hover:text-red-600"
+                    >Apply Loan</a
+                  >
+                  <a
+                    href="Element.html"
+                    class="text-blue-800 hover:text-red-600"
+                    >Elements</a
+                  >
+                </div>
+              </div>
+              <div class="relative inline-block group">
+                <h1 class="font-bold cursor-pointer text-sm text-white">
+                  Blog
+                </h1>
+
+                <div
+                  class="w-[80px] absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+                >
+                  <a href="Blog.html" class="text-blue-800 hover:text-red-600"
+                    >Blog</a
+                  >
+                  <a href="single.html" class="text-blue-800 hover:text-red-600"
+                    >Single-Blog</a
+                  >
+                </div>
+              </div>
+              <a href="FAQ.html" class="ml-5 text-white font-bold text-sm"
+                >FAQ</a
+              >
+              <a href="contact.html" class="ml-5 text-white font-bold text-sm"
+                >CONTACT</a
+              >
+            </div>
+            <div class="flex gap-2 items-center">
+              <h2 class="text-white text-sm">
+                <i class="fa-solid fa-phone text-blue-400"></i> +10 673 567 367
+              </h2>
+              <button
+                class="border-2 border-blue-400 border-solid text-blue-200 hover:bg-blue-400 hover:text-white py-2 px-6 rounded"
+              >
+                Apply For A Loan
+              </button>
+            </div>
+          </nav>
+        </div>
+
+        <!-- content -->
+        <div
+          class="w-full lg:h-[100vh] lg:flex justify-evenly items-center px-10 py-5"
+        >
+          <!-- 1 -->
+          <div class="w-full lg:w-2/5 flex items-center justify-center">
+            <div>
+              <h1 class="text-white lg:text-5xl text-2xl">
+                Get Loan for your Business growth or Startup
+              </h1>
+              <button
+                class="py-3 mt-5 hover:bg-gray-950/30 px-10 bg-blue-400 border-2 border-solid border-blue-400 rounded text-white"
+              >
+                How it Works
+              </button>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="w-full lg:w-2/5 bg-white p-5 rounded mt-5 lg:-mt-5 py-20">
+            <div>
+              <h1 class="text-center text-3xl">How much do you want?</h1>
+              <h2 class="mt-3 text-gray-500 text-center">
+                We provide online instant cash loan with quick
+              </h2>
+              <select
+                name="amount"
+                id="amount"
+                class="w-full mt-5 h-10 border-2 border-gray-300 border-solid rounded text-gray-400"
+              >
+                <option
+                  value="Amount"
+                  class="font-bold text-black hover:text-gray-400"
+                >
+                  Amount
+                </option>
+                <option value="$10">$10</option>
+                <option value="$40">$40</option>
+                <option value="$50">$50</option>
+              </select>
+              <select
+                name="amount"
+                id="amount"
+                class="w-full mt-5 h-10 border-2 border-gray-300 border-solid rounded text-gray-400"
+              >
+                <option
+                  value="month"
+                  class="font-bold text-black hover:text-gray-400"
+                >
+                  Month
+                </option>
+                <option value="$10">3 Month</option>
+                <option value="$40">6 Month</option>
+                <option value="$50">9 Month</option>
+                <option value="$50">12 Month</option>
+              </select>
+              <h1 class="mt-5 text-gray-400">You have to pay: $0</h1>
+              <button
+                class="mt-5 w-full py-3 px-5 bg-blue-400 border-2 border-solid border-blue-400 hover:bg-white font-semibold text-white hover:text-blue-400 rounded"
+              >
+                Continue
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- container 2 (what we offer for you)-->
+    <div class="w-full mt-40">
+      <!-- nav -->
+      <nav class="py-3 px-5">
+        <div>
+          <div class="w-full flex justify-center">
+            <hr class="w-20 border-2 border-blue-400 border-solid" />
+          </div>
+          <h1 class="text-2xl lg:text-4xl mt-5 text-center">
+            What we offer for you
+          </h1>
+          <h2 class="text-gray-400 text-center mt-5">
+            We provide online instant cash loans with quick approval that suit
+            your term
+          </h2>
+        </div>
+      </nav>
+
+      <!--  content -->
+      <div class="w-full mt-10 flex justify-center items-center">
+        <div
+          class="w-full px-5 flex-wrap py-5 flex justify-evenly items-center"
+        >
+          <div
+            id="TwoColors"
+            class="w-80 mt-5 p-5 py-10 rounded flex justify-center"
+          >
+            <div class="w-full">
+              <div class="w-full flex justify-center">
+                <img src="images/service_1.png.webp" class="items-center" />
+              </div>
+              <h1 class="text-center text-white mt-10">Home Loan</h1>
+              <h2 class="text-blue-300 mt-5 text-2xl font-semibold text-center">
+                $3000-$10000
+              </h2>
+              <hr
+                class="w-full border-spacing-1 border-white border-solid mt-10"
+              />
+              <div class="w-full mt-10">
+                <h1
+                  class="text-white font-semibold flex items-center gap-3 mt-3"
+                >
+                  <div class="w-3 h-3 rounded-full bg-blue-300"></div>
+                  Borrow - $350 over 3 months
+                </h1>
+                <h1
+                  class="text-lg text-white font-semibold flex items-center gap-3 mt-3"
+                >
+                  <div class="w-3 h-3 rounded-full bg-blue-300"></div>
+                  Interest rate - 292% pa fixed
+                </h1>
+                <h1
+                  class="text-white font-semibold flex items-center gap-3 mt-3"
+                >
+                  <div class="w-3 h-3 rounded-full bg-blue-300"></div>
+                  Total amount payable - $525.12
+                </h1>
+                <h1
+                  class="text-white font-semibold flex items-center gap-3 mt-3"
+                >
+                  <div class="w-3 h-3 rounded-full bg-blue-300"></div>
+                  Representative - 1,286% APR
+                </h1>
+              </div>
+              <button
+                class="mt-10 w-full h-12 hover:bg-blue-600 text-white rounded bg-blue-300 border-2 border-solid border-blue-300 hover:text-blue-200 font-bold"
+              >
+                Apply Now
+              </button>
+            </div>
+          </div>
+          <div
+            id="TwoColors"
+            class="w-80 mt-5 p-5 py-10 rounded flex justify-center"
+          >
+            <div class="w-full">
+              <div class="w-full flex justify-center">
+                <img src="images/service_2.png.webp" class="items-center" />
+              </div>
+              <h1 class="text-center text-white mt-10">Car Loan</h1>
+              <h2 class="text-blue-300 mt-5 text-2xl font-semibold text-center">
+                $3000-$10000
+              </h2>
+              <hr
+                class="w-full border-spacing-1 border-white border-solid mt-10"
+              />
+              <div class="w-full mt-10">
+                <h1
+                  class="text-white font-semibold flex items-center gap-3 mt-3"
+                >
+                  <div class="w-3 h-3 rounded-full bg-blue-300"></div>
+                  Borrow - $350 over 3 months
+                </h1>
+                <h1
+                  class="text-lg text-white font-semibold flex items-center gap-3 mt-3"
+                >
+                  <div class="w-3 h-3 rounded-full bg-blue-300"></div>
+                  Interest rate - 292% pa fixed
+                </h1>
+                <h1
+                  class="text-white font-semibold flex items-center gap-3 mt-3"
+                >
+                  <div class="w-3 h-3 rounded-full bg-blue-300"></div>
+                  Total amount payable - $525.12
+                </h1>
+                <h1
+                  class="text-white font-semibold flex items-center gap-3 mt-3"
+                >
+                  <div class="w-3 h-3 rounded-full bg-blue-300"></div>
+                  Representative - 1,286% APR
+                </h1>
+              </div>
+              <button
+                class="mt-10 w-full h-12 hover:bg-blue-600 text-white rounded bg-blue-300 border-2 border-solid border-blue-300 hover:text-blue-200 font-bold"
+              >
+                Apply Now
+              </button>
+            </div>
+          </div>
+          <div
+            id="TwoColors"
+            class="w-80 mt-5 p-5 py-10 rounded flex justify-center"
+          >
+            <div class="w-full">
+              <div class="w-full flex justify-center">
+                <img src="images/service_3.png.webp" class="items-center" />
+              </div>
+              <h1 class="text-center text-white mt-10">Education Loan</h1>
+              <h2 class="text-blue-300 mt-5 text-2xl font-semibold text-center">
+                $3000-$10000
+              </h2>
+              <hr
+                class="w-full border-spacing-1 border-white border-solid mt-10"
+              />
+              <div class="w-full mt-10">
+                <h1
+                  class="text-white font-semibold flex items-center gap-3 mt-3"
+                >
+                  <div class="w-3 h-3 rounded-full bg-blue-300"></div>
+                  Borrow - $350 over 3 months
+                </h1>
+                <h1
+                  class="text-lg text-white font-semibold flex items-center gap-3 mt-3"
+                >
+                  <div class="w-3 h-3 rounded-full bg-blue-300"></div>
+                  Interest rate - 292% pa fixed
+                </h1>
+                <h1
+                  class="text-white font-semibold flex items-center gap-3 mt-3"
+                >
+                  <div class="w-3 h-3 rounded-full bg-blue-300"></div>
+                  Total amount payable - $525.12
+                </h1>
+                <h1
+                  class="text-white font-semibold flex items-center gap-3 mt-3"
+                >
+                  <div class="w-3 h-3 rounded-full bg-blue-300"></div>
+                  Representative - 1,286% APR
+                </h1>
+              </div>
+              <button
+                class="mt-10 w-full h-12 hover:bg-blue-600 text-white rounded bg-blue-300 border-2 border-solid border-blue-300 hover:text-blue-200 font-bold"
+              >
+                Apply Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- container 3 (About us) -->
+    <div class="w-full p-5 mt-20 flex justify-between">
+      <div class="w-full lg:flex justify-around items-center mt-4">
+        <img
+          src="images/about.png.webp"
+          class="w-full h-[550px] lg:w-[450px]"
+        />
+
+        <div class="w-full lg:w-[500px] h-[50%]">
+          <h1 class="text-3xl lg:text-5xl">Why Choose Us?</h1>
+          <p class="font-light mt-6 text-gray-400">
+            Esteem spirit temper too say adieus who direct esteem.It esteems
+            luckily or picture placing drawing. Apartments frequently or
+            motionless on reasonable.
+          </p>
+          <div class="w-full mt-10">
+            <h1 class="flex items-center gap-3 mt-3">
+              <div class="w-3 h-3 rounded-full bg-blue-300"></div>
+              Loans with quick approval.
+            </h1>
+            <h1 class="text-lg flex items-center gap-3 mt-3">
+              <div class="w-3 h-3 rounded-full bg-blue-300"></div>
+              Customize a loan based on the amount.
+            </h1>
+            <h1 class="flex items-center gap-3 mt-3">
+              <div class="w-3 h-3 rounded-full bg-blue-300"></div>
+              Good credit profile and you have built your loan.
+            </h1>
+            <h1 class="flex items-center gap-3 mt-3">
+              <div class="w-3 h-3 rounded-full bg-blue-300"></div>
+              We provide online instant cash loans.
+            </h1>
+          </div>
+          <button
+            class="border-2 bg-blue-400 text-white border-blue-300 border-solid p-2 rounded-lg mt-5 hover:text-blue-400 hover:bg-white px-5 font-bold"
+          >
+            About Us
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- container 4 (How it works) -->
+    <div class="w-full mt-20">
+      <!-- nav -->
+      <nav class="py-3 px-5">
+        <div>
+          <div class="w-full flex justify-center">
+            <hr class="w-20 border-2 border-blue-400 border-solid" />
+          </div>
+          <h1 class="text-2xl lg:text-5xl mt-5 text-center">How it works</h1>
+          <h2 class="text-gray-400 text-center mt-5">
+            We provide online instant cash loans with quick approval that suit
+            your term
+          </h2>
+        </div>
+      </nav>
+
+      <!-- content -->
+      <div>
+        <div
+          class="w-full px-5 flex-wrap py-5 flex justify-evenly items-center"
+        >
+          <div class="w-80 mt-5 p-5 py-10 rounded flex justify-center">
+            <div class="w-full">
+              <div
+                class="w-20 h-20 rounded-full bg-blue-100 flex justify-center items-center"
+              >
+                <h1 class="text-blue-400">01</h1>
+              </div>
+              <h1 class="text-xl mt-5">Apply for loan</h1>
+              <h2 class="text-gray-400 mt-5 text-sm">
+                We will customize a loan based on the amount of cash your
+                company need term
+              </h2>
+            </div>
+          </div>
+          <div class="w-80 mt-5 p-5 py-10 rounded flex justify-center">
+            <div class="w-full">
+              <div
+                class="w-20 h-20 rounded-full bg-blue-100 flex justify-center items-center"
+              >
+                <h1 class="text-blue-400">02</h1>
+              </div>
+              <h1 class="text-xl mt-5">Application review</h1>
+              <h2 class="text-gray-400 mt-5 text-sm">
+                We will customize a loan based on the amount of cash your
+                company need term
+              </h2>
+            </div>
+          </div>
+          <div class="w-80 mt-5 p-5 py-10 rounded flex justify-center">
+            <div class="w-full">
+              <div
+                class="w-20 h-20 rounded-full bg-blue-100 flex justify-center items-center"
+              >
+                <h1 class="text-blue-400">03</h1>
+              </div>
+              <h1 class="text-xl mt-5">Get funding fast</h1>
+              <h2 class="text-gray-400 mt-5 text-sm">
+                We will customize a loan based on the amount of cash your
+                company need term
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- container 5 (frequently Ask) -->
+
+    <div class="w-full h-[100vh] flex justify-between">
+      <img
+        src="images/samiling-man.webp"
+        class="hidden lg:block w-1/2 h-full"
+      />
+      <div class="lg:w-2/5 w-full h-full items-center">
+        <h1 class="text-4xl m-10">Frequently Ask</h1>
+        <div id="container" class="w-full h-8 overflow-hidden mt-5">
+          <div class="w-full flex gap-3 items-center">
+            <button id="clickme" class="text-xl">
+              <i id="arrowIcon" class="fa-solid fa-chevron-down"></i>
+            </button>
+            <h1>Aduies who direct esteem it esteems luckily?</h1>
+          </div>
+          <h1 id="contentS" class="text-gray-400 text-sm">
+            Esteem spirit temper too say adieus who direct esteem esteems
+            luckily or picture placing drawing.
+          </h1>
+        </div>
+        <div id="container2" class="w-full h-8 overflow-hidden mt-5">
+          <div class="w-full flex gap-3 items-center">
+            <button id="clickme2" class="text-xl">
+              <i id="arrowIcon" class="fa-solid fa-chevron-down"></i>
+            </button>
+            <h1>Who direct esteem to esteems?</h1>
+          </div>
+          <h1 id="content" class="text-gray-400 text-sm">
+            Esteem spirit temper too say adieus who direct esteem esteems
+            luckily or picture placing drawing.
+          </h1>
+        </div>
+        <div id="container3" class="w-full h-8 overflow-hidden mt-5">
+          <div class="w-full flex gap-3 items-center">
+            <button id="clickme3" class="text-xl">
+              <i id="arrowIcon" class="fa-solid fa-chevron-down"></i>
+            </button>
+            <h1>Duies consectructoe firgtor acutor?</h1>
+          </div>
+          <h1 id="contentS" class="text-gray-400 text-sm">
+            Esteem spirit temper too say adieus who direct esteem esteems
+            luckily or picture placing drawing.
+          </h1>
+        </div>
+        <div id="container4" class="w-full h-8 overflow-hidden mt-5">
+          <div class="w-full flex gap-3 items-center">
+            <button id="clickme4" class="text-xl">
+              <i id="arrowIcon" class="fa-solid fa-chevron-down"></i>
+            </button>
+            <h1>Consectuter feugiat auctor?</h1>
+          </div>
+          <h1 id="contentS" class="text-gray-400">
+            Esteem spirit temper too say adieus who direct esteem esteems
+            luckily or picture placing drawing.
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- container 6 (photo + text) -->
+    <div class="w-full mt-20 lg:flex justify-evenly items-center">
+      <div
+        class="w-60 h-60 bg-[url('images/author.png.webp')] bg-center bg-cover rounded-full flex justify-end items-end"
+      >
+        <div
+          class="text-white bg-blue-500 h-16 w-16 rounded-full flex justify-center items-center text-6xl"
+        >
+          "
+        </div>
+      </div>
+      <div class="lg:w-1/2">
+        <h1>
+          "Working in conjucation with huminatires aid agiencies , we have
+          supported programms to help allevite human suffring through animal
+          welfare when people might depend on livestuck as their only sources of
+          incoming or food." <br />
+        </h1>
+        <h1 class="text-gray-400 mt-5">~Micky Mouse</h1>
+      </div>
+    </div>
+
+    <!-- container 7 (logos) -->
+    <div class="px-10 w-full mt-20 flex-wrap flex justify-evenly items-end">
+      <img src="images/logo1.webp" />
+      <img src="images/logo2.webp" />
+      <img src="images/logo3.webp" />
+      <img src="images/logo5.webp" />
+      <img src="images/logo6.webp" />
+    </div>
+
+    <!-- container 8 (photo + text) -->
+    <div
+      class="w-full lg:h-[50vh] bg-[url(images/laptop.jpeg)] bg-cover bg-center mt-10"
+    >
+      <div
+        class="w-full h-full bg-gray-800/35 lg:flex justify-evenly items-center"
+      >
+        <h1 class="text-3xl lg:text-4xl text-white">
+          Apply for a Loan for your startup,<br />
+          education or company
+        </h1>
+        <button
+          class="bg-blue-400 text-white py-3 px-8 rounded hover:bg-gray-800/35 hover:text-white border-2 border-blue-400 border-solid mt-10"
+        >
+          Apply Now
+        </button>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="w-full p-5 mt-20 flex-wrap flex justify-evenly items-center">
+      <div class="w-60 mt-5 h-72 bg-white">
+        <div class="flex gap-2 items-center">
+          <button class="w-10 h-10 rounded-full bg-blue-400">
+            <i class="fa-solid fa-house text-white"></i>
+          </button>
+          <h1 class="text-xl font-semibold">Finloans</h1>
+        </div>
+        <h3 class="text-gray-400 text-sm mt-5">
+          finloan@support.com<br />
+          +10 873 672 6782<br />
+          600/D, Green road, NewYork
+        </h3>
+      </div>
+
+      <div class="p-5 mt-5 h-72 w-40 bg-white">
+        <h1 class="font-semibold">Services</h1>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5">SEO/SEM</a>
+        </div>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5">Web design</a>
+        </div>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5">Ecommerce</a>
+        </div>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5 text-sm"
+            >Digital marketing</a
+          >
+        </div>
+      </div>
+
+      <div class="p-5 mt-5 h-72 w-40 bg-white">
+        <h1 class="font-semibold">Services</h1>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5">About</a>
+        </div>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5">Blog</a>
+        </div>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5">contact</a>
+        </div>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5">Support</a>
+        </div>
+      </div>
+
+      <div class="lg:w-[30vw] h-72 bg-white mt-5 p-5">
+        <h1 class="font-semibold">Subcribe</h1>
+        <div class="flex mt-5 justify-between">
+          <input
+            type="text"
+            class="mt-5 rounded h-8 w-28"
+            placeholder="Enter your mail....."
+          />
+          <button class="bg-blue-400 px-5 py-0 rounded text-white">
+            subscribe
+          </button>
+        </div>
+        <p class="mt-5 text-gray-500 text-sm">
+          Esteem spirit temper too say adieus who direct esteem esteems luckily.
+        </p>
+      </div>
+
+      <p class="mt-20 text-gray-500">
+        Copyright ©2024 All rights reserved | This template is made with
+        <i class="fa-regular fa-heart"></i> by Colorlib
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

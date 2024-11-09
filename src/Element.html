@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elements</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="extra.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Large Screen Navbar -->
+    <header
+      id="navbar-lg"
+      class="hidden lg:block transform -translate-y-full fixed top-0 w-full bg-blue-950/50 z-50 transition-transform duration-500"
+    >
+      <nav class="w-full h-16 flex justify-between items-center">
+        <div class="flex gap-3 items-center">
+          <button class="w-10 h-10 rounded-full bg-blue-400">
+            <i class="fa-solid fa-house text-white"></i>
+          </button>
+          <h1 class="text-white text-xl">Finloan</h1>
+        </div>
+        <div id="navBarTool" class="w-1/2 flex justify-evenly items-center">
+          <a href="index.html" class="ml-5 text-white font-bold text-sm"
+            >Home</a
+          >
+          <a href="#" class="ml-5 text-white font-bold text-sm">Loan</a>
+          <a href="about.html" class="ml-5 text-white font-bold text-sm"
+            >About</a
+          >
+          <div class="relative inline-block group">
+            <h1 class="font-bold cursor-pointer text-sm text-white">Pages</h1>
+
+            <div
+              class="w-28 absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+            >
+              <a href="Apply.html" class="text-blue-800 hover:text-red-600"
+                >Apply Loan</a
+              >
+              <a href="Element.html" class="text-blue-800 hover:text-red-600"
+                >Elements</a
+              >
+            </div>
+          </div>
+          <div class="relative inline-block group">
+            <h1 class="font-bold cursor-pointer text-sm text-white">Blog</h1>
+
+            <div
+              class="w-[80px] absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+            >
+              <a href="Blog.html" class="text-blue-800 hover:text-red-600"
+                >Blog</a
+              >
+              <a href="single.html" class="text-blue-800 hover:text-red-600"
+                >Single-Blog</a
+              >
+            </div>
+          </div>
+          <a href="FAQ.html" class="ml-5 text-white font-bold text-sm">FAQ</a>
+          <a href="contact.html" class="ml-5 text-white font-bold text-sm"
+            >CONTACT</a
+          >
+        </div>
+        <div class="flex gap-2 items-center">
+          <h2 class="text-white text-sm">
+            <i class="fa-solid fa-phone text-blue-400"></i> +10 673 567 367
+          </h2>
+          <button
+            class="border-2 border-blue-400 border-solid text-blue-200 hover:bg-blue-400 hover:text-white py-2 px-6 rounded"
+          >
+            Apply For A Loan
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Small Screen Navbar -->
+    <header
+      id="navbar-sm"
+      class="lg:hidden transform -translate-y-full fixed top-0 w-full bg-white z-50 transition-transform duration-500"
+    >
+      <nav class="w-full bg-gray-600 h-16 flex justify-between items-center">
+        <div class="flex gap-3 items-center">
+          <button class="w-10 h-10 rounded-full bg-blue-400">
+            <i class="fa-solid fa-house text-white"></i>
+          </button>
+          <h1 class="text-white text-xl">Finloan</h1>
+        </div>
+        <menu>
+          <div class="fixedMenu" id="fixedMenu">
+            <i class="fa-solid fa-bars text-white"></i>
+          </div>
+          <div class="fixedMenu-Content" id="fixedMenuContent">
+            <a
+              href="index.html"
+              class="ml-5 hover:text-gray-600 font-bold text-sm"
+              >Home</a
+            >
+            <a href="#" class="ml-5 hover:text-gray-600 font-bold text-sm"
+              >Loan</a
+            >
+            <a
+              href="about.html"
+              class="ml-5 hover:text-gray-600 font-bold text-sm"
+              >About</a
+            >
+            <div class="relative inline-block group">
+              <h1
+                class="font-bold cursor-pointer text-sm hover:text-gray-600 ml-5"
+              >
+                Pages
+              </h1>
+
+              <div
+                class="w-28 absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+              >
+                <a href="Apply.html" class="text-blue-800 hover:text-red-600"
+                  >Apply Loan</a
+                >
+                <a href="Element.html" class="text-blue-800 hover:text-red-600"
+                  >Elements</a
+                >
+              </div>
+            </div>
+            <div class="relative inline-block group">
+              <h1
+                class="font-bold cursor-pointer text-sm hover:text-gray-600 ml-5"
+              >
+                blog
+              </h1>
+
+              <div
+                class="w-28 absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+              >
+                <a href="Blog.html" class="text-blue-800 hover:text-red-600"
+                  >Blog</a
+                >
+                <a href="single.html" class="text-blue-800 hover:text-red-600"
+                  >Single-Blog
+                </a>
+              </div>
+            </div>
+            <a
+              href="FAQ.html"
+              class="ml-5 hover:text-gray-600 font-bold text-sm"
+              >FAQ</a
+            >
+            <a
+              href="contact.html"
+              class="ml-5 hover:text-gray-600 font-bold text-sm"
+              >CONTACT</a
+            >
+          </div>
+        </menu>
+      </nav>
+    </header>
+
+    <!-- container 1 -->
+    <div class="w-full bg-[url(images/contact.jpg)] bg-cover bg-center">
+      <div class="w-full h-full bg-gray-950/30">
+        <!-- navbar for small screen-->
+        <div class="lg:hidden">
+          <nav class="w-full h-16 flex justify-between items-center">
+            <div class="flex gap-2 items-center">
+              <button class="w-10 h-10 rounded-full bg-blue-400">
+                <i class="fa-solid fa-house"></i>
+              </button>
+              <h1 class="text-white text-xl">Finloan</h1>
+            </div>
+            <menu>
+              <div class="menu" id="menu">
+                <i class="fa-solid fa-bars-staggered text-2xl text-white"></i>
+              </div>
+              <div class="menu-content" id="menuContent">
+                <a
+                  href="index.html"
+                  class="ml-5 hover:text-gray-600 font-bold text-sm"
+                  >Home</a
+                >
+                <a href="#" class="ml-5 hover:text-gray-600 font-bold text-sm"
+                  >Loan</a
+                >
+                <a
+                  href="about.html"
+                  class="ml-5 hover:text-gray-600 font-bold text-sm"
+                  >About</a
+                >
+                <div class="relative inline-block group">
+                  <h1
+                    class="font-bold cursor-pointer text-sm hover:text-gray-600 ml-5"
+                  >
+                    Pages
+                  </h1>
+
+                  <div
+                    class="w-28 absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+                  >
+                    <a
+                      href="Apply.html"
+                      class="text-blue-800 hover:text-red-600"
+                      >Apply Loan</a
+                    >
+                    <a
+                      href="Element.html"
+                      class="text-blue-800 hover:text-red-600"
+                      >Elements</a
+                    >
+                  </div>
+                </div>
+                <div class="relative inline-block group">
+                  <h1
+                    class="font-bold cursor-pointer text-sm hover:text-gray-600 ml-5"
+                  >
+                    blog
+                  </h1>
+
+                  <div
+                    class="w-28 absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+                  >
+                    <a href="Blog.html" class="text-blue-800 hover:text-red-600"
+                      >Blog</a
+                    >
+                    <a
+                      href="single.html"
+                      class="text-blue-800 hover:text-red-600"
+                      >Single-Blog
+                    </a>
+                  </div>
+                </div>
+                <a
+                  href="FAQ.html"
+                  class="ml-5 hover:text-gray-600 font-bold text-sm"
+                  >FAQ</a
+                >
+                <a
+                  href="contact.html"
+                  class="ml-5 hover:text-gray-600 font-bold text-sm"
+                  >CONTACT</a
+                >
+              </div>
+            </menu>
+          </nav>
+        </div>
+        <!-- navbar for large screen -->
+        <div class="hidden lg:block">
+          <nav class="w-full h-20 flex justify-between items-center px-5">
+            <div class="flex gap-2 items-center">
+              <button class="w-10 h-10 rounded-full bg-blue-400">
+                <i class="fa-solid fa-house text-white"></i>
+              </button>
+              <h1 class="text-white text-xl">Finloan</h1>
+            </div>
+            <div class="w-1/2 flex justify-evenly items-center">
+              <a href="index.html" class="ml-5 text-white font-bold text-sm"
+                >Home</a
+              >
+              <a href="#" class="ml-5 text-white font-bold text-sm">Loan</a>
+              <a href="about.html" class="ml-5 text-white font-bold text-sm"
+                >About</a
+              >
+              <div class="relative inline-block group">
+                <h1 class="font-bold cursor-pointer text-sm text-white">
+                  Pages
+                </h1>
+
+                <div
+                  class="w-28 absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+                >
+                  <a href="Apply.html" class="text-blue-800 hover:text-red-600"
+                    >Apply Loan</a
+                  >
+                  <a
+                    href="Element.html"
+                    class="text-blue-800 hover:text-red-600"
+                    >Elements</a
+                  >
+                </div>
+              </div>
+              <div class="relative inline-block group">
+                <h1 class="font-bold cursor-pointer text-sm text-white">
+                  Blog
+                </h1>
+
+                <div
+                  class="w-[80px] absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+                >
+                  <a href="Blog.html" class="text-blue-800 hover:text-red-600"
+                    >Blog</a
+                  >
+                  <a href="single.html" class="text-blue-800 hover:text-red-600"
+                    >Single-Blog</a
+                  >
+                </div>
+              </div>
+              <a href="FAQ.html" class="ml-5 text-white font-bold text-sm"
+                >FAQ</a
+              >
+              <a href="contact.html" class="ml-5 text-white font-bold text-sm"
+                >CONTACT</a
+              >
+            </div>
+            <div class="flex gap-2 items-center">
+              <h2 class="text-white text-sm">
+                <i class="fa-solid fa-phone text-blue-400"></i> +10 673 567 367
+              </h2>
+              <button
+                class="border-2 border-blue-400 border-solid text-blue-200 hover:bg-blue-400 hover:text-white py-2 px-6 rounded"
+              >
+                Apply For A Loan
+              </button>
+            </div>
+          </nav>
+        </div>
+
+        <!-- content -->
+        <div class="w-full lg:h-[100vh] lg:flex items-center px-10 py-5">
+          <!-- 1 -->
+          <div class="w-full lg:w-2/5 flex items-center justify-center">
+            <h1 class="text-white text-2xl lg:text-6xl font-extrabold">
+              Elements
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- container 2  (Text)-->
+    <div class="w-full px-20 mt-20">
+      <h1 class="font-semibold lg:text-2xl">Text simple</h1>
+      <p class="text-gray-400 mt-10">
+        Every avid independent filmmaker has
+        <span class="text-red-500 font-extrabold">Bold</span> about making that
+        <i class="text-red-500">Italic</i> interest documentary, or short film
+        to show off their creative prowess. Many have great ideas and want to
+        “wow” the
+        <span class="font-extralight text-red-500">Superscript</span> scene, or
+        video renters with their big project. But once you have theSubscript “in
+        the can” (no easy feat), how do you move from a Strike through of master
+        DVDs with the
+        <span
+          class="decoration-transparent font-extrabold text-red-500 underline-2"
+          >“Underline”</span
+        >
+        marked hand-written title inside a secondhand CD case, to a pile of
+        cardboard boxes full of shiny new, retail-ready DVDs, with UPC barcodes
+        and polywrap sitting on your doorstep? You need to create eye-popping
+        artwork and have your project replicated. Using a reputable full service
+        DVD Replication company like PacificDisc, Inc. to
+        <span class="line-through text-red-500 font-extrabold">partner</span>
+        with is certainly a helpful option to ensure a professional end result,
+        but to help with your DVD replication project, here are 4 easy steps to
+        follow for good DVD replication results:
+      </p>
+    </div>
+
+    <!-- container 3 (buttons) -->
+    <div class="w-full p-10 lg:px-20">
+      <div class="w-full flex-wrap flex justify-between items-center mt-5">
+        <a href="#" class="hover:text-blue-600 mt-5">Defualt</a>
+        <div class="flex-wrap flex items-center gap-5 mt-5">
+          <button
+            class="border-2 border-solid border-orange-600 py-2 px-5 hover:text-orange-600 hover:bg-white bg-orange-600 text-white font-bold"
+          >
+            Primary
+          </button>
+          <button
+            class="border-2 border-solid border-blue-400 py-2 px-5 hover:text-blue-400 hover:bg-white bg-blue-400 text-white font-bold"
+          >
+            Success
+          </button>
+          <button
+            class="border-2 border-solid border-blue-600 py-2 px-5 hover:text-blue-600 hover:bg-white bg-blue-600 text-white font-bold"
+          >
+            Info
+          </button>
+          <button
+            class="border-2 border-solid border-yellow-400 py-2 px-5 hover:text-yellow-400 text-white hover:bg-white bg-yellow-400 font-bold"
+          >
+            Warning
+          </button>
+          <button
+            class="border-2 border-solid border-red-500 py-2 px-5 hover:text-red-500 hover:bg-white bg-red-500 text-white font-bold"
+          >
+            Danger
+          </button>
+        </div>
+        <a href="#" class="text-blue-600 hover:text-black underline mt-5"
+          >link</a
+        >
+        <a href="#" class="hover:text-red-600 cursor-not-allowed mt-5"
+          >Disable</a
+        >
+      </div>
+
+      <div class="w-full flex-wrap flex justify-between items-center mt-5">
+        <a href="#" class="hover:text-blue-600 mt-5">Defualt</a>
+        <div class="flex-wrap flex items-center gap-5 mt-5">
+          <button
+            class="border-2 border-solid border-orange-600 py-2 px-5 hover:text-white hover:bg-orange-600 bg-white text-orange-600 font-bold"
+          >
+            Primary
+          </button>
+          <button
+            class="border-2 border-solid border-blue-400 py-2 px-5 hover:text-white hover:bg-blue-400 bg-white text-blue-400 font-bold"
+          >
+            Success
+          </button>
+          <button
+            class="border-2 border-solid border-blue-600 py-2 px-5 hover:text-blue-600 hover:bg-blue-400 text-blue-600 bg-white font-bold"
+          >
+            Info
+          </button>
+          <button
+            class="border-2 border-solid border-yellow-400 py-2 px-5 hover:text-white text-yellow-400 hover:bg-yellow-400 bg-white font-bold"
+          >
+            Warning
+          </button>
+          <button
+            class="border-2 border-solid border-red-500 py-2 px-5 hover:text-white hover:bg-red-500 bg-white text-red-500 font-bold"
+          >
+            Danger
+          </button>
+        </div>
+        <a href="#" class="text-blue-600 hover:text-black underline mt-5"
+          >link</a
+        >
+        <a href="#" class="hover:text-red-600 cursor-not-allowed mt-5"
+          >Disable</a
+        >
+      </div>
+
+      <div class="w-full flex-wrap flex justify-between items-center mt-5">
+        <a href="#" class="hover:text-blue-600 mt-5">Defualt</a>
+        <div class="flex-wrap flex items-center gap-5 mt-5">
+          <button
+            class="border-2 border-solid border-orange-600 py-2 px-5 hover:text-orange-600 hover:bg-white bg-orange-600 text-white font-bold"
+          >
+            Primary
+          </button>
+          <button
+            class="border-2 border-solid border-blue-400 py-2 px-5 hover:text-blue-400 hover:bg-white bg-blue-400 text-white font-bold"
+          >
+            Success
+          </button>
+          <button
+            class="border-2 border-solid border-blue-600 py-2 px-5 hover:text-blue-600 hover:bg-white bg-blue-600 text-white font-bold"
+          >
+            Info
+          </button>
+          <button
+            class="border-2 border-solid border-yellow-400 py-2 px-5 hover:text-yellow-400 text-white hover:bg-white bg-yellow-400 font-bold"
+          >
+            Warning
+          </button>
+          <button
+            class="border-2 border-solid border-red-500 py-2 px-5 hover:text-red-500 hover:bg-white bg-red-500 text-white font-bold"
+          >
+            Danger
+          </button>
+        </div>
+        <a href="#" class="text-blue-600 hover:text-black underline mt-5"
+          >link</a
+        >
+        <a href="#" class="hover:text-red-600 cursor-not-allowed mt-5"
+          >Disable</a
+        >
+      </div>
+
+      <div class="w-full flex-wrap flex justify-between items-center mt-5">
+        <a href="#" class="hover:text-blue-600 mt-5">Defualt</a>
+        <div class="flex-wrap flex items-center gap-5 mt-5">
+          <button
+            class="border-2 border-solid border-orange-600 py-2 px-5 hover:text-white hover:bg-orange-600 bg-white text-orange-600 font-bold"
+          >
+            Primary
+          </button>
+          <button
+            class="border-2 border-solid border-blue-400 py-2 px-5 hover:text-white hover:bg-blue-400 bg-white text-blue-400 font-bold"
+          >
+            Success
+          </button>
+          <button
+            class="border-2 border-solid border-blue-600 py-2 px-5 hover:text-blue-600 hover:bg-blue-400 text-blue-600 bg-white font-bold"
+          >
+            Info
+          </button>
+          <button
+            class="border-2 border-solid border-yellow-400 py-2 px-5 hover:text-white text-yellow-400 hover:bg-yellow-400 bg-white font-bold"
+          >
+            Warning
+          </button>
+          <button
+            class="border-2 border-solid border-red-500 py-2 px-5 hover:text-white hover:bg-red-500 bg-white text-red-500 font-bold"
+          >
+            Danger
+          </button>
+        </div>
+        <a href="#" class="text-blue-600 hover:text-black underline mt-5"
+          >link</a
+        >
+        <a href="#" class="hover:text-red-600 cursor-not-allowed mt-5"
+          >Disable</a
+        >
+      </div>
+
+      <!-- rounded area -->
+      <div class="w-full flex-wrap flex justify-between items-center mt-5">
+        <a href="#" class="hover:text-blue-600 mt-5">Defualt</a>
+        <div class="flex-wrap flex items-center gap-5 mt-5">
+          <button
+            class="border-2 border-solid border-orange-600 py-2 px-5 rounded-full hover:text-orange-600 hover:bg-white bg-orange-600 text-white font-bold"
+          >
+            Primary
+          </button>
+          <button
+            class="border-2 border-solid border-blue-400 py-2 px-5 hover:text-blue-400 hover:bg-white bg-blue-400 text-white font-bold rounded-full"
+          >
+            Success
+          </button>
+          <button
+            class="border-2 border-solid border-blue-600 py-2 px-5 hover:text-blue-600 hover:bg-white bg-blue-600 text-white font-bold rounded-full"
+          >
+            Info
+          </button>
+          <button
+            class="border-2 border-solid border-yellow-400 py-2 px-5 hover:text-yellow-400 text-white hover:bg-white bg-yellow-400 rounded-full font-bold"
+          >
+            Warning
+          </button>
+          <button
+            class="border-2 border-solid border-red-500 py-2 px-5 hover:text-red-500 hover:bg-white bg-red-500 text-white font-bold rounded-full"
+          >
+            Danger
+          </button>
+        </div>
+        <a href="#" class="text-blue-600 hover:text-black underline mt-5"
+          >link</a
+        >
+        <a href="#" class="hover:text-red-600 cursor-not-allowed mt-5"
+          >Disable</a
+        >
+      </div>
+
+      <div class="w-full flex-wrap flex justify-between items-center mt-5">
+        <a href="#" class="hover:text-blue-600 mt-5">Defualt</a>
+        <div class="flex-wrap flex items-center gap-5 mt-5">
+          <button
+            class="border-2 border-solid border-orange-600 py-2 px-5 hover:text-white hover:bg-orange-600 bg-white text-orange-600 font-bold rounded-full"
+          >
+            Primary
+          </button>
+          <button
+            class="border-2 border-solid border-blue-400 py-2 px-5 hover:text-white hover:bg-blue-400 bg-white text-blue-400 font-bold rounded-full"
+          >
+            Success
+          </button>
+          <button
+            class="border-2 border-solid border-blue-600 py-2 px-5 hover:text-blue-600 hover:bg-blue-400 text-blue-600 bg-white font-bold rounded-full"
+          >
+            Info
+          </button>
+          <button
+            class="border-2 border-solid border-yellow-400 py-2 px-5 hover:text-white text-yellow-400 hover:bg-yellow-400 bg-white font-bold rounded-full"
+          >
+            Warning
+          </button>
+          <button
+            class="border-2 border-solid border-red-500 py-2 px-5 hover:text-white hover:bg-red-500 bg-white text-red-500 font-bold rounded-full"
+          >
+            Danger
+          </button>
+        </div>
+        <a href="#" class="text-blue-600 hover:text-black underline mt-5"
+          >link</a
+        >
+        <a href="#" class="hover:text-red-600 cursor-not-allowed mt-5"
+          >Disable</a
+        >
+      </div>
+
+      <div class="w-full flex-wrap flex justify-between items-center mt-5">
+        <a href="#" class="hover:text-blue-600 mt-5">Defualt</a>
+        <div class="flex-wrap flex items-center gap-5 mt-5">
+          <button
+            class="border-2 border-solid border-orange-600 py-2 px-5 rounded-full hover:text-orange-600 hover:bg-white bg-orange-600 text-white font-bold"
+          >
+            Primary
+          </button>
+          <button
+            class="border-2 border-solid border-blue-400 py-2 px-5 hover:text-blue-400 hover:bg-white bg-blue-400 text-white font-bold rounded-full"
+          >
+            Success
+          </button>
+          <button
+            class="border-2 border-solid border-blue-600 py-2 px-5 hover:text-blue-600 hover:bg-white bg-blue-600 text-white font-bold rounded-full"
+          >
+            Info
+          </button>
+          <button
+            class="border-2 border-solid border-yellow-400 py-2 px-5 hover:text-yellow-400 text-white hover:bg-white bg-yellow-400 rounded-full font-bold"
+          >
+            Warning
+          </button>
+          <button
+            class="border-2 border-solid border-red-500 py-2 px-5 hover:text-red-500 hover:bg-white bg-red-500 text-white font-bold rounded-full"
+          >
+            Danger
+          </button>
+        </div>
+        <a href="#" class="text-blue-600 hover:text-black underline mt-5"
+          >link</a
+        >
+        <a href="#" class="hover:text-red-600 cursor-not-allowed mt-5"
+          >Disable</a
+        >
+      </div>
+
+      <div class="w-full flex-wrap flex justify-between items-center mt-5">
+        <a href="#" class="hover:text-blue-600 mt-5">Defualt</a>
+        <div class="flex-wrap flex items-center gap-5 mt-5">
+          <button
+            class="border-2 border-solid border-orange-600 py-2 px-5 hover:text-white hover:bg-orange-600 bg-white text-orange-600 font-bold rounded-full"
+          >
+            Primary
+          </button>
+          <button
+            class="border-2 border-solid border-blue-400 py-2 px-5 hover:text-white hover:bg-blue-400 bg-white text-blue-400 font-bold rounded-full"
+          >
+            Success
+          </button>
+          <button
+            class="border-2 border-solid border-blue-600 py-2 px-5 hover:text-blue-600 hover:bg-blue-400 text-blue-600 bg-white font-bold rounded-full"
+          >
+            Info
+          </button>
+          <button
+            class="border-2 border-solid border-yellow-400 py-2 px-5 hover:text-white text-yellow-400 hover:bg-yellow-400 bg-white font-bold rounded-full"
+          >
+            Warning
+          </button>
+          <button
+            class="border-2 border-solid border-red-500 py-2 px-5 hover:text-white hover:bg-red-500 bg-white text-red-500 font-bold rounded-full"
+          >
+            Danger
+          </button>
+        </div>
+        <a href="#" class="text-blue-600 hover:text-black underline mt-5"
+          >link</a
+        >
+        <a href="#" class="hover:text-red-600 cursor-not-allowed mt-5"
+          >Disable</a
+        >
+      </div>
+
+      <div class="w-full flex-wrap flex justify-between items-center mt-5">
+        <div class="flex-wrap flex items-center gap-5 mt-5">
+          <button
+            class="border-2 border-solid border-orange-600 py-6 px-7 hover:text-orange-600 hover:bg-white bg-orange-600 text-white font-bold"
+          >
+            Extra large
+          </button>
+          <button
+            class="border-2 border-solid border-blue-400 py-5 px-6 hover:text-blue-400 hover:bg-white bg-blue-400 text-white font-bold"
+          >
+            Large
+          </button>
+          <button
+            class="border-2 border-solid border-orange-600 py-4 px-5 hover:text-orange-600 hover:bg-white bg-orange-600 text-white font-bold"
+          >
+            Defualt
+          </button>
+          <button
+            class="border-2 border-solid border-blue-400 py-3 px-4 hover:text-blue-400 text-white hover:bg-white bg-blue-400 font-bold"
+          >
+            Medium
+          </button>
+          <button
+            class="border-2 border-solid border-red-500 py-2 px-3 hover:text-red-500 hover:bg-white bg-red-500 text-white font-bold"
+          >
+            Small
+          </button>
+        </div>
+        =
+      </div>
+
+      <div class="w-full flex-wrap flex justify-between items-center mt-5">
+        <div class="flex-wrap flex items-center gap-5 mt-5">
+          <button
+            class="border-2 border-solid border-orange-600 py-6 px-7 hover:text-white hover:bg-orange-600 bg-white text-orange-600 font-bold"
+          >
+            Extra large
+          </button>
+          <button
+            class="border-2 border-solid border-blue-400 py-5 px-6 hover:text-white hover:bg-blue-400 bg-white text-blue-400 font-bold"
+          >
+            Large
+          </button>
+          <button
+            class="border-2 border-solid border-orange-600 py-4 px-5 hover:text-orange-600 hover:bg-blue-400 text-orange-600 bg-white font-bold"
+          >
+            Defualt
+          </button>
+          <button
+            class="border-2 border-solid border-blue-400 py-3 px-4 hover:text-white text-blue-400 hover:bg-blue-400 bg-white font-bold"
+          >
+            Medium
+          </button>
+          <button
+            class="border-2 border-solid border-red-500 py-2 px-3 hover:text-white hover:bg-red-500 bg-white text-red-500 font-bold"
+          >
+            Small
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- container 4 (photo + text) -->
+    <div class="w-full p-5 lg:px-20 mt-20">
+      <h1 class="font-extrabold text-2xl">Left Aligned</h1>
+      <div class="w-full lg:flex gap-10 mt-10">
+        <img src="images/element1.webp" class="w-[200px] h-[200px] mt-5" />
+        <p class="text-gray-400 mt-5">
+          Recently, the US Federal government banned online casinos from
+          operating in America by making it illegal to transfer money to them
+          through any US bank or payment system. As a result of this law, most
+          of the popular online casino networks such as Party Gaming and
+          PlayTech left the United States. Overnight, online casino players
+          found themselves being chased by the Federal government. But, after a
+          fortnight, the online casino industry came up with a solution and new
+          online casinos started taking root. These began to operate under a
+          different business umbrella, and by doing that, rendered the transfer
+          of money to and from them legal. A major part of this was enlisting
+          electronic banking systems that would accept this new clarification
+          and start doing business with me. Listed in this article are the
+          electronic banking systems that accept players from the United States
+          that wish to play in online casinos.
+        </p>
+      </div>
+
+      <h1 class="font-extrabold text-2xl mt-5 lg:mt-20 text-end">
+        Right Aligned
+      </h1>
+      <div class="w-full lg:flex gap-10 mt-10">
+        <p class="text-gray-400 mt-5">
+          Recently, the US Federal government banned online casinos from
+          operating in America by making it illegal to transfer money to them
+          through any US bank or payment system. As a result of this law, most
+          of the popular online casino networks such as Party Gaming and
+          PlayTech left the United States. Overnight, online casino players
+          found themselves being chased by the Federal government. But, after a
+          fortnight, the online casino industry came up with a solution and new
+          online casinos started taking root. These began to operate under a
+          different business umbrella, and by doing that, rendered the transfer
+          of money to and from them legal. A major part of this was enlisting
+          electronic banking systems that would accept this new clarification
+          and start doing business with me. Listed in this article are the
+          electronic banking systems that accept players from the United States
+          that wish to play in online casinos.
+        </p>
+        <img src="images/element1.webp" class="w-[200px] h-[200px] mt-5" />
+      </div>
+    </div>
+
+    <!-- container 5 (text containers) -->
+    <div class="w-full p-5 lg:px-20 mt-20">
+      <h1 class="lg:text-2xl">Definition</h1>
+      <div class="w-full lg:flex justify-evenly items-center py-5">
+        <div class="w-80 text-gray-400 mt-5">
+          <h1 class="text-black font-semibold">Definition 01</h1>
+          <p class="mt-10 text-lg">
+            Recently, the US Federal government banned online casinos from
+            operating in America by making it illegal to transfer money to them
+            through any US bank or payment system. As a result of this law, most
+            of the popular online casino networks
+          </p>
+        </div>
+        <div class="w-80 text-gray-400 mt-5">
+          <h1 class="text-black font-semibold">Definition 02</h1>
+          <p class="mt-10 text-lg">
+            Recently, the US Federal government banned online casinos from
+            operating in America by making it illegal to transfer money to them
+            through any US bank or payment system. As a result of this law, most
+            of the popular online casino networks
+          </p>
+        </div>
+        <div class="w-80 text-gray-400 mt-5">
+          <h1 class="text-black font-semibold">Definition 03</h1>
+          <p class="mt-10 text-lg">
+            Recently, the US Federal government banned online casinos from
+            operating in America by making it illegal to transfer money to them
+            through any US bank or payment system. As a result of this law, most
+            of the popular online casino networks
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- container 6 (block) -->
+    <div class="w-full m-5 mt-20 px-10">
+      <h1 class="font-semibold text-2xl">Block Quotes</h1>
+      <p class="border-l-4 border-l-orange-400 py-10 px-5">
+        “Recently, the US Federal government banned online casinos from
+        operating in America by making it illegal to transfer money to them
+        through any US bank or payment system. As a result of this law, most of
+        the popular online casino networks such as Party Gaming and PlayTech
+        left the United States. Overnight, online casino players found
+        themselves being chased by the Federal government. But, after a
+        fortnight, the online casino industry came up with a solution and new
+        online casinos started taking root. These began to operate under a
+        different business umbrella, and by doing that, rendered the transfer of
+        money to and from them legal. A major part of this was enlisting
+        electronic banking systems that would accept this new clarification and
+        start doing business with me. Listed in this article are the electronic
+        banking”
+      </p>
+    </div>
+
+    <!-- container 7 (images -->
+    <div class="w-full px-10 mt-20">
+      <h1 class="font-extrabold lg:text-2xl">Image Gallery</h1>
+      <div class="flex flex-wrap w-full mt-10">
+        <img
+          src="https://preview.colorlib.com/theme/finloans/img/elements/g1.jpg"
+          class="m-5"
+        />
+        <img
+          src="https://preview.colorlib.com/theme/finloans/img/elements/g2.jpg"
+          class="m-5"
+        />
+        <img
+          src="https://preview.colorlib.com/theme/finloans/img/elements/g3.jpg"
+          class="m-5"
+        />
+        <img
+          src="https://preview.colorlib.com/theme/finloans/img/elements/g4.jpg"
+          class="m-5"
+        />
+        <img
+          src="https://preview.colorlib.com/theme/finloans/img/elements/g5.jpg"
+          class="m-5"
+        />
+        <img
+          src="https://preview.colorlib.com/theme/finloans/img/elements/g6.jpg"
+          class="m-5"
+        />
+        <img
+          src="https://preview.colorlib.com/theme/finloans/img/elements/g7.jpg"
+          class="m-5"
+        />
+      </div>
+    </div>
+
+    <!-- container 8 (text) -->
+    <div class="w-full p-5 lg:px-20 mt-20">
+      <div class="w-full lg:flex justify-evenly items-center py-5">
+        <div class="w-80 text-gray-400 mt-5">
+          <h1 class="text-black font-semibold lg:text-2xl">image Gallery</h1>
+
+          <h1 class="text-blue-500 mt-5 text-4xl">this is header 01</h1>
+          <h2 class="text-blue-500 mt-5 text-3xl">this is header 02</h2>
+          <h3 class="text-blue-500 mt-5 text-2xl">this is header 03</h3>
+          <h4 class="text-blue-500 mt-5 text-xl">this is header 04</h4>
+          <h5 class="text-blue-500 mt-5 text-lg">this is header 05</h5>
+          <h6 class="text-blue-500 mt-5 text-sm">this is header 06</h6>
+        </div>
+        <div class="w-80 text-gray-400 mt-5">
+          <h1 class="text-black font-semibold mb-5 text-2xl">
+            DUnordered List
+          </h1>
+          <ul style="list-style-type: circle">
+            <li>Fta Keys</li>
+            <li>For Women Only Your Computer Usage</li>
+            <li>Addiction When Gambling Becomes</li>
+            <li>Facts Why Inkjet Printing Is Very Appealing</li>
+            <li>Protective Preventative Maintenance</li>
+            <li>Dealing With Technical Support 10 Useful Tips</li>
+            <li>Make Myspace Your Best Designed Space</li>
+            <li>Cleaning And Organizing Your Computer</li>
+          </ul>
+        </div>
+        <div class="w-80 text-gray-400 mt-5">
+          <h1 class="text-black font-semibold text-2xl">Order List</h1>
+          <h1 class="text-gray-400 mt-5">
+            <span class="text-red-500">01.</span>Fta Keys
+          </h1>
+          <h1 class="text-gray-400 mt-5">
+            <span class="text-red-500">01.</span>Fta Keys
+          </h1>
+          <h1 class="text-gray-400 mt-5">
+            <span class="text-red-500">02.</span>Lorem ipsum dolor sit.
+          </h1>
+          <h1 class="text-gray-400 mt-5">
+            <span class="text-red-500">03.</span>Lorem ipsum dolor sit.
+          </h1>
+          <h1 class="text-gray-400 mt-5">
+            <span class="text-red-500">04.</span>Lorem ipsum dolor sit amet
+            consectetur.
+          </h1>
+          <h1 class="text-gray-400 mt-5">
+            <span class="text-red-500">05.</span>Lorem ipsum dolor sit.
+          </h1>
+          <h1 class="text-gray-400 mt-5">
+            <span class="text-red-500">06.</span>Dealing With Technical Support
+            10 Useful Tips
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- container 9  (form)-->
+    <div class="w-full mt-20 p-5 flex-wrap lg:flex justify-evenly items-center">
+      <div
+        class="lg:w-1/2 w-full bg-white shadow-md shadow-orange-600 p-5 rounded py-12 mt-5"
+      >
+        <h1 class="font-extrabold">Form Element</h1>
+        <input
+          type="text"
+          class="w-full h-8 mt-5 focus:border-transparent focus:outline-none"
+          placeholder="Name"
+        />
+
+        <input
+          type="text"
+          class="h-8 w-full focus:border-transparent focus:outline-none mt-5"
+          placeholder="Last Name"
+        />
+        <input
+          type="text"
+          class="h-8 w-full focus:border-transparent focus:outline-none mt-5"
+          placeholder="Address Email"
+        />
+        <input
+          type="text"
+          class="h-8 w-full focus:border-transparent focus:outline-none mt-5"
+          placeholder="pin Address"
+        />
+        <select
+          name="amount"
+          id="amount"
+          class="w-full mt-10 h-10 text-gray-400 focus:border-transparent focus:outline-none"
+        >
+          <option value="Amount" class="font-bold hover:text-gray-400">
+            City
+          </option>
+
+          <option value="$40">new york</option>
+          <option value="$50">dilli</option>
+          <option value="$40">new york</option>
+          <option value="$50">dilli</option>
+        </select>
+        <select
+          name="amount"
+          id="amount"
+          class="w-full mt-10 h-10 text-gray-400 focus:border-transparent focus:outline-none"
+        >
+          <option value="Amount" class="font-bold hover:text-gray-400">
+            Country
+          </option>
+
+          <option value="$40">Pakistan</option>
+          <option value="$50">india</option>
+          <option value="$40">USA</option>
+          <option value="$50">Canada</option>
+        </select>
+        <input
+          type="text"
+          class="h-8 w-full focus:border-transparent focus:outline-none mt-5"
+          placeholder="Message"
+        />
+        <input
+          type="text"
+          class="h-8 w-full focus:border-transparent focus:outline-none mt-5"
+          placeholder="Primary color"
+        />
+        <input
+          type="text"
+          class="h-8 w-full focus:border-transparent focus:outline-none mt-5"
+          placeholder="Accent color"
+        />
+        <input
+          type="text"
+          class="h-8 w-full focus:border-transparent focus:outline-none mt-5"
+          placeholder="Secondary color"
+        />
+        <button
+          class="py-3 px-6 border-2 border-blue-400 border-solid hover:bg-blue-400 text-blue-400 hover:text-white mt-5 rounded"
+        >
+          SEND MESSAGE
+        </button>
+      </div>
+      <div class="w-96 mt-5 p-5">
+        <div class="mt-5">
+          <h1 class="text-2xl font-bold mb-10">Switches</h1>
+          <div class="w-full flex justify-between items-center">
+            <h3 class="text-gray-400">01.</h3>
+            <h1>sample switch</h1>
+            <label class="relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" class="sr-only peer" />
+              <div
+                class="w-11 h-6 bg-gray-300 rounded-full peer-focus:ring-4 peer-focus:ring-red-300 peer-checked:bg-red-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all"
+              ></div>
+            </label>
+          </div>
+        </div>
+        <div class="mt-5">
+          <div class="w-full flex justify-between items-center">
+            <h3 class="text-gray-400">01.</h3>
+            <h1>sample switch</h1>
+            <label class="relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" class="sr-only peer" />
+              <div
+                class="w-11 h-6 bg-gray-300 rounded-full peer-focus:ring-4 peer-focus:ring-red-300 peer-checked:bg-red-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all"
+              ></div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <div class="w-full flex justify-between items-center">
+            <h3 class="text-gray-400">01.</h3>
+            <h1>sample switch</h1>
+            <label class="relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" class="sr-only peer" />
+              <div
+                class="w-11 h-6 bg-gray-300 rounded-full peer-focus:ring-4 peer-focus:ring-red-300 peer-checked:bg-red-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all"
+              ></div>
+            </label>
+          </div>
+        </div>
+
+        <!-- select box -->
+        <div class="mt-20 w-full">
+          <h1 class="mb-10">selectbox</h1>
+          <select name="car" id="car" class="w-full">
+            <option value="audi">audi</option>
+            <option value="car">car</option>
+            <option value="suzaki">suzaki</option>
+          </select>
+        </div>
+
+        <!-- check box -->
+        <div class="w-full mt-10">
+          <h1 class="text-2xl font-bold mb-5">Checkboxes</h1>
+          <form action="/action_page.php">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+            <label for="vehicle1"> I have a bike</label><br />
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+            <label for="vehicle2"> I have a car</label><br />
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+            <label for="vehicle3"> I have a boat</label><br /><br />
+          </form>
+        </div>
+
+        <!-- radio button -->
+        <div class="w-full mt-10">
+          <h1 class="font-bold text-2xl mb-5">Radios</h1>
+          <form action="/action_page.php">
+             
+            <input type="radio" id="html" name="fav_language" value="HTML" />  
+            <label for="html">HTML</label><br />
+              <input type="radio" id="css" name="fav_language" value="CSS" />  
+            <label for="css">CSS</label><br />
+             
+            <input
+              type="radio"
+              id="javascript"
+              name="fav_language"
+              value="JavaScript"
+            />
+              <label for="javascript">JavaScript</label>
+
+            <br />
+
+            <input type="radio" id="age1" name="age" value="30" />
+            <label for="age1">0 - 30</label><br />
+            <input type="radio" id="age2" name="age" value="60" />
+            <label for="age2">31 - 60</label><br />
+            <input type="radio" id="age3" name="age" value="100" />
+            <label for="age3">61 - 100</label><br /><br />
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="w-full p-5 mt-20 flex-wrap flex justify-evenly items-center">
+      <div class="w-60 mt-5 h-72 bg-white">
+        <div class="flex gap-2 items-center">
+          <button class="w-10 h-10 rounded-full bg-blue-400">
+            <i class="fa-solid fa-house text-white"></i>
+          </button>
+          <h1 class="text-xl font-semibold">Finloans</h1>
+        </div>
+        <h3 class="text-gray-400 text-sm mt-5">
+          finloan@support.com<br />
+          +10 873 672 6782<br />
+          600/D, Green road, NewYork
+        </h3>
+      </div>
+
+      <div class="p-5 mt-5 h-72 w-40 bg-white">
+        <h1 class="font-semibold">Services</h1>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5">SEO/SEM</a>
+        </div>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5">Web design</a>
+        </div>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5">Ecommerce</a>
+        </div>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5 text-sm"
+            >Digital marketing</a
+          >
+        </div>
+      </div>
+
+      <div class="p-5 mt-5 h-72 w-40 bg-white">
+        <h1 class="font-semibold">Services</h1>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5">About</a>
+        </div>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5">Blog</a>
+        </div>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5">contact</a>
+        </div>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5">Support</a>
+        </div>
+      </div>
+
+      <div class="lg:w-[30vw] h-72 bg-white mt-5 p-5">
+        <h1 class="font-semibold">Subcribe</h1>
+        <div class="flex mt-5 justify-between">
+          <input
+            type="text"
+            class="mt-5 rounded h-8 w-28"
+            placeholder="Enter your mail....."
+          />
+          <button class="bg-blue-400 px-5 py-0 rounded text-white">
+            subscribe
+          </button>
+        </div>
+        <p class="mt-5 text-gray-500 text-sm">
+          Esteem spirit temper too say adieus who direct esteem esteems luckily.
+        </p>
+      </div>
+
+      <p class="mt-20 text-gray-500">
+        Copyright ©2024 All rights reserved | This template is made with
+        <i class="fa-regular fa-heart"></i> by Colorlib
+      </p>
+    </div>
+    <script src="script.js"></script>
+    <script src="aboutscript.js"></script>
+  </body>
+</html>

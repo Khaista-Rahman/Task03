@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Blog</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="extra.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Large Screen Navbar -->
+    <header
+      id="navbar-lg"
+      class="hidden lg:block transform -translate-y-full fixed top-0 w-full bg-blue-950/50 z-50 transition-transform duration-500"
+    >
+      <nav class="w-full h-16 flex justify-between items-center">
+        <div class="flex gap-3 items-center">
+          <button class="w-10 h-10 rounded-full bg-blue-400">
+            <i class="fa-solid fa-house text-white"></i>
+          </button>
+          <h1 class="text-white text-xl">Finloan</h1>
+        </div>
+        <div id="navBarTool" class="w-1/2 flex justify-evenly items-center">
+          <a href="index.html" class="ml-5 text-white font-bold text-sm"
+            >Home</a
+          >
+          <a href="#" class="ml-5 text-white font-bold text-sm">Loan</a>
+          <a href="about.html" class="ml-5 text-white font-bold text-sm"
+            >About</a
+          >
+          <div class="relative inline-block group">
+            <h1 class="font-bold cursor-pointer text-sm text-white">Pages</h1>
+
+            <div
+              class="w-28 absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+            >
+              <a href="Apply.html" class="text-blue-800 hover:text-red-600"
+                >Apply Loan</a
+              >
+              <a href="Element.html" class="text-blue-800 hover:text-red-600"
+                >Elements</a
+              >
+            </div>
+          </div>
+          <div class="relative inline-block group">
+            <h1 class="font-bold cursor-pointer text-sm text-white">Blog</h1>
+
+            <div
+              class="w-[80px] absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+            >
+              <a href="Blog.html" class="text-blue-800 hover:text-red-600"
+                >Blog</a
+              >
+              <a href="single.html" class="text-blue-800 hover:text-red-600"
+                >Single-Blog</a
+              >
+            </div>
+          </div>
+          <a href="FAQ.html" class="ml-5 text-white font-bold text-sm">FAQ</a>
+          <a href="contact.html" class="ml-5 text-white font-bold text-sm"
+            >CONTACT</a
+          >
+        </div>
+        <div class="flex gap-2 items-center">
+          <h2 class="text-white text-sm">
+            <i class="fa-solid fa-phone text-blue-400"></i> +10 673 567 367
+          </h2>
+          <button
+            class="border-2 border-blue-400 border-solid text-blue-200 hover:bg-blue-400 hover:text-white py-2 px-6 rounded"
+          >
+            Apply For A Loan
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Small Screen Navbar -->
+    <header
+      id="navbar-sm"
+      class="lg:hidden transform -translate-y-full fixed top-0 w-full bg-white z-50 transition-transform duration-500"
+    >
+      <nav class="w-full bg-gray-600 h-16 flex justify-between items-center">
+        <div class="flex gap-3 items-center">
+          <button class="w-10 h-10 rounded-full bg-blue-400">
+            <i class="fa-solid fa-house text-white"></i>
+          </button>
+          <h1 class="text-white text-xl">Finloan</h1>
+        </div>
+        <menu>
+          <div class="fixedMenu" id="fixedMenu">
+            <i class="fa-solid fa-bars text-white"></i>
+          </div>
+          <div class="fixedMenu-Content" id="fixedMenuContent">
+            <a
+              href="index.html"
+              class="ml-5 hover:text-gray-600 font-bold text-sm"
+              >Home</a
+            >
+            <a href="#" class="ml-5 hover:text-gray-600 font-bold text-sm"
+              >Loan</a
+            >
+            <a
+              href="about.html"
+              class="ml-5 hover:text-gray-600 font-bold text-sm"
+              >About</a
+            >
+            <div class="relative inline-block group">
+              <h1
+                class="font-bold cursor-pointer text-sm hover:text-gray-600 ml-5"
+              >
+                Pages
+              </h1>
+
+              <div
+                class="w-28 absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+              >
+                <a href="Apply.html" class="text-blue-800 hover:text-red-600"
+                  >Apply Loan</a
+                >
+                <a href="Element.html" class="text-blue-800 hover:text-red-600"
+                  >Elements</a
+                >
+              </div>
+            </div>
+            <div class="relative inline-block group">
+              <h1
+                class="font-bold cursor-pointer text-sm hover:text-gray-600 ml-5"
+              >
+                blog
+              </h1>
+
+              <div
+                class="w-28 absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+              >
+                <a href="Blog.html" class="text-blue-800 hover:text-red-600"
+                  >Blog</a
+                >
+                <a href="single.html" class="text-blue-800 hover:text-red-600"
+                  >Single-Blog
+                </a>
+              </div>
+            </div>
+            <a
+              href="FAQ.html"
+              class="ml-5 hover:text-gray-600 font-bold text-sm"
+              >FAQ</a
+            >
+            <a
+              href="contact.html"
+              class="ml-5 hover:text-gray-600 font-bold text-sm"
+              >CONTACT</a
+            >
+          </div>
+        </menu>
+      </nav>
+    </header>
+
+    <!-- container 1 -->
+    <div class="w-full bg-[url(images/contact.jpg)] bg-cover bg-center">
+      <div class="w-full h-full bg-gray-950/30">
+        <!-- navbar for small screen-->
+        <div class="lg:hidden">
+          <nav class="w-full h-16 flex justify-between items-center">
+            <div class="flex gap-2 items-center">
+              <button class="w-10 h-10 rounded-full bg-blue-400">
+                <i class="fa-solid fa-house"></i>
+              </button>
+              <h1 class="text-white text-xl">Finloan</h1>
+            </div>
+            <menu>
+              <div class="menu" id="menu">
+                <i class="fa-solid fa-bars-staggered text-2xl text-white"></i>
+              </div>
+              <div class="menu-content" id="menuContent">
+                <a
+                  href="index.html"
+                  class="ml-5 hover:text-gray-600 font-bold text-sm"
+                  >Home</a
+                >
+                <a href="#" class="ml-5 hover:text-gray-600 font-bold text-sm"
+                  >Loan</a
+                >
+                <a
+                  href="about.html"
+                  class="ml-5 hover:text-gray-600 font-bold text-sm"
+                  >About</a
+                >
+                <div class="relative inline-block group">
+                  <h1
+                    class="font-bold cursor-pointer text-sm hover:text-gray-600 ml-5"
+                  >
+                    Pages
+                  </h1>
+
+                  <div
+                    class="w-28 absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+                  >
+                    <a
+                      href="Apply.html"
+                      class="text-blue-800 hover:text-red-600"
+                      >Apply Loan</a
+                    >
+                    <a
+                      href="Element.html"
+                      class="text-blue-800 hover:text-red-600"
+                      >Elements</a
+                    >
+                  </div>
+                </div>
+                <div class="relative inline-block group">
+                  <h1
+                    class="font-bold cursor-pointer text-sm hover:text-gray-600 ml-5"
+                  >
+                    blog
+                  </h1>
+
+                  <div
+                    class="w-28 absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+                  >
+                    <a href="Blog.html" class="text-blue-800 hover:text-red-600"
+                      >Blog</a
+                    >
+                    <a
+                      href="single.html"
+                      class="text-blue-800 hover:text-red-600"
+                      >Single-Blog
+                    </a>
+                  </div>
+                </div>
+                <a
+                  href="FAQ.html"
+                  class="ml-5 hover:text-gray-600 font-bold text-sm"
+                  >FAQ</a
+                >
+                <a
+                  href="contact.html"
+                  class="ml-5 hover:text-gray-600 font-bold text-sm"
+                  >CONTACT</a
+                >
+              </div>
+            </menu>
+          </nav>
+        </div>
+        <!-- navbar for large screen -->
+        <div class="hidden lg:block">
+          <nav class="w-full h-20 flex justify-between items-center px-5">
+            <div class="flex gap-2 items-center">
+              <button class="w-10 h-10 rounded-full bg-blue-400">
+                <i class="fa-solid fa-house text-white"></i>
+              </button>
+              <h1 class="text-white text-xl">Finloan</h1>
+            </div>
+            <div class="w-1/2 flex justify-evenly items-center">
+              <a href="index.html" class="ml-5 text-white font-bold text-sm"
+                >Home</a
+              >
+              <a href="#" class="ml-5 text-white font-bold text-sm">Loan</a>
+              <a href="about.html" class="ml-5 text-white font-bold text-sm"
+                >About</a
+              >
+              <div class="relative inline-block group">
+                <h1 class="font-bold cursor-pointer text-sm text-white">
+                  Pages
+                </h1>
+
+                <div
+                  class="w-28 absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+                >
+                  <a href="Apply.html" class="text-blue-800 hover:text-red-600"
+                    >Apply Loan</a
+                  >
+                  <a
+                    href="Element.html"
+                    class="text-blue-800 hover:text-red-600"
+                    >Elements</a
+                  >
+                </div>
+              </div>
+              <div class="relative inline-block group">
+                <h1 class="font-bold cursor-pointer text-sm text-white">
+                  Blog
+                </h1>
+
+                <div
+                  class="w-[80px] absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+                >
+                  <a href="Blog.html" class="text-blue-800 hover:text-red-600"
+                    >Blog</a
+                  >
+                  <a href="single.html" class="text-blue-800 hover:text-red-600"
+                    >Single-Blog</a
+                  >
+                </div>
+              </div>
+              <a href="FAQ.html" class="ml-5 text-white font-bold text-sm"
+                >FAQ</a
+              >
+              <a href="contact.html" class="ml-5 text-white font-bold text-sm"
+                >CONTACT</a
+              >
+            </div>
+            <div class="flex gap-2 items-center">
+              <h2 class="text-white text-sm">
+                <i class="fa-solid fa-phone text-blue-400"></i> +10 673 567 367
+              </h2>
+              <button
+                class="border-2 border-blue-400 border-solid text-blue-200 hover:bg-blue-400 hover:text-white py-2 px-6 rounded"
+              >
+                Apply For A Loan
+              </button>
+            </div>
+          </nav>
+        </div>
+
+        <!-- content -->
+        <div class="w-full lg:h-[100vh] lg:flex items-center px-10 py-5">
+          <!-- 1 -->
+          <div class="w-full lg:w-2/5 flex items-center justify-center">
+            <h1 class="text-white text-2xl lg:text-6xl font-extrabold">
+              Single Blog
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- container 2  (contact)-->
+    <div class="w-full lg:flex p-5 justify-between flex-wrap mt-20">
+      <div class="w-full lg:w-2/3 p-5">
+        <!-- one -->
+        <div
+          class="mt-5 w-full lg:w-3/4 h-96 bg-[url(images/blog1.webp)] bg-cover bg-center flex items-end"
+        >
+          <button
+            class="bg-blue-400 rounded py-5 px-7 text-white font-semibold hover:bg-gray-200/30 hover:text-blue-400"
+          >
+            <span class="text-2xl">15</span><br />jan
+          </button>
+        </div>
+        <div class="w-full px-10 mt-10">
+          <h1 class="font-semibold hover:text-blue-400 lg:text-2xl">
+            Second divided from form fish beast made every of seas all gathered
+            us saying he our
+          </h1>
+          <p class="text-gray-400 mt-5">
+            That dominion stars lights dominion divide years for fourth have
+            don't stars is that he earth it first without heaven in place seed
+            it second morning saying.
+          </p>
+          <button class="mt-5 text-gray-400 hover:text-blue-400">
+            <i class="fa-solid fa-user"></i> Travel, Lifestyle
+          </button>
+          |
+          <button class="mt-5 text-gray-400 hover:text-blue-400">
+            <i class="fa-solid fa-comments"></i> 03 Comments
+          </button>
+        </div>
+
+        <!-- para one -->
+        <h1 class="text-gray-400 mt-10">
+          MCSE boot camps have its supporters and its detractors. Some people do
+          not understand why you should have to spend money on boot camp when
+          you can get the MCSE study materials yourself at a fraction of the
+          camp price. However, who has the willpower
+        </h1>
+
+        <!-- para two -->
+        <h1 class="text-gray-400 mt-10">
+          MCSE boot camps have its supporters and its detractors. Some people do
+          not understand why you should have to spend money on boot camp when
+          you can get the MCSE study materials yourself at a fraction of the
+          camp price. However, who has the willpower to actually sit through a
+          self-imposed MCSE training. who has the willpower to actually
+        </h1>
+
+        <!-- para three -->
+        <div
+          class="w-full border-l-4 border-l-gray-400 border-solid mt-10 px-5 py-5"
+        >
+          <i class="text-gray-400"
+            >MCSE boot camps have its supporters and its detractors. Some people
+            do not understand why you should have to spend money on boot camp
+            when you can get the MCSE study materials yourself at a fraction of
+            the camp price. However, who has the willpower to actually sit
+            through a self-imposed MCSE training.</i
+          >
+        </div>
+
+        <!-- para four -->
+        <h1 class="text-gray-400 mt-10">
+          MCSE boot camps have its supporters and its detractors. Some people do
+          not understand why you should have to spend money on boot camp when
+          you can get the MCSE study materials yourself at a fraction of the
+          camp price. However, who has the willpower
+        </h1>
+
+        <!-- para five -->
+        <h1 class="text-gray-400 mt-10">
+          MCSE boot camps have its supporters and its detractors. Some people do
+          not understand why you should have to spend money on boot camp when
+          you can get the MCSE study materials yourself at a fraction of the
+          camp price. However, who has the willpower to actually sit through a
+          self-imposed MCSE training. who has the willpower to actually
+        </h1>
+
+        <!-- comment -->
+        <div class="mt-10 flex justify-between items-center w-full">
+          <h1 class="text-gray-400">
+            <i class="fa-solid fa-heart hover:text-red-600 cursor-pointer"></i>
+            Lily and 4 people like this
+          </h1>
+          <div class="flex gap-4">
+            <i
+              class="fa-brands fa-facebook-f hover:text-blue-500 cursor-pointer text-gray-400"
+            ></i>
+            <i
+              class="fa-brands fa-twitter hover:text-blue-500 cursor-pointer text-gray-400"
+            ></i>
+            <i
+              class="fa-solid fa-globe hover:text-blue-500 cursor-pointer text-gray-400"
+            ></i>
+            <i
+              class="fa-brands fa-behance hover:text-blue-500 cursor-pointer text-gray-400"
+            ></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- another container -->
+      <div class="w-full lg:w-1/3 p-5">
+        <!-- search area -->
+        <div class="w-full flex justify-center items-center">
+          <input
+            type="text"
+            class="focus:border-transparent focus:outline-none h-16"
+            placeholder="Search keyword"
+          />
+          <button class="text-gray-300">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <button
+          class="mt-10 w-full px-20 py-5 border-solid border-2 border-blue-400 text-blue-400 hover:text-white hover:bg-blue-400"
+        >
+          SEARCH
+        </button>
+        <!-- finish (search area)-->
+
+        <!-- category area -->
+        <div class="w-full mt-10">
+          <h1 class="font-semibold">Category</h1>
+          <div class="w-full mt-16">
+            <h2 class="text-gray-500 hover:text-blue-400 mt-5 cursor-pointer">
+              Resaurant food(37)
+            </h2>
+            <h2 class="text-gray-500 hover:text-blue-400 mt-5 cursor-pointer">
+              Travel news(10)
+            </h2>
+            <h2 class="text-gray-500 hover:text-blue-400 mt-5 cursor-pointer">
+              Modern technology(03)
+            </h2>
+            <h2 class="text-gray-500 hover:text-blue-400 mt-5 cursor-pointer">
+              Product (11)
+            </h2>
+            <h2 class="text-gray-500 hover:text-blue-400 mt-5 cursor-pointer">
+              Inspiration21
+            </h2>
+            <h2 class="text-gray-500 hover:text-blue-400 mt-5 cursor-pointer">
+              Health Care (09)11
+            </h2>
+          </div>
+        </div>
+        <!-- finish(catrgory)-->
+
+        <!-- Recent Post -->
+        <div class="w-full mt-20">
+          <h1 class="font-semibold">Recent Post</h1>
+          <!-- one -->
+          <div class="w-full mt-10 flex gap-10 items-center">
+            <img src="images/blog1.webp" class="w-20 h-20" />
+            <h1 class="hover:text-blue-400 font-semibold cursor-pointer">
+              From life was you fish...<br />
+              <span class="text-gray-400">January 12, 2019</span>
+            </h1>
+          </div>
+          <!-- finish -->
+          <!-- two -->
+          <div class="w-full mt-5 flex gap-10 items-center">
+            <img src="images/blog2.webp" class="w-20 h-20" />
+            <h1 class="hover:text-blue-400 font-semibold cursor-pointer">
+              The Amazing Hubble.<br />
+              <span class="text-gray-400">02 Hours ago</span>
+            </h1>
+          </div>
+          <!-- finish -->
+          <!-- three -->
+          <div class="w-full mt-5 flex gap-10 items-center">
+            <img src="images/blog3.webp" class="w-20 h-20" />
+            <h1 class="hover:text-blue-400 font-semibold cursor-pointer">
+              Asteroids telescope<br />
+              <span class="text-gray-400">01 Hours ago</span>
+            </h1>
+          </div>
+          <!-- finish -->
+          <!-- four -->
+          <div class="w-full mt-5 flex gap-10 items-center">
+            <img src="images/blog4.webp" class="w-20 h-20" />
+            <h1 class="hover:text-blue-400 font-semibold cursor-pointer">
+              Astronomy Or Astrology<br />
+              <span class="text-gray-400">03 Hours ago</span>
+            </h1>
+          </div>
+          <!-- finish -->
+        </div>
+        <!-- finish (Recent) -->
+
+        <!-- Tag Cloud  -->
+        <div class="w-full mt-20">
+          <h1 class="font-semibold">Tag Cloud</h1>
+          <div class="mt-10 flex-wrap flex justify-center">
+            <button
+              class="mt-5 py-2 px-7 text-gray-500 hover:bg-blue-400 hover:text-white rounded"
+            >
+              project
+            </button>
+            <button
+              class="mt-5 py-2 px-7 text-gray-500 hover:bg-blue-400 hover:text-white rounded"
+            >
+              love
+            </button>
+            <button
+              class="mt-5 py-2 px-7 text-gray-500 hover:bg-blue-400 hover:text-white rounded"
+            >
+              technology
+            </button>
+            <button
+              class="mt-5 py-2 px-7 text-gray-500 hover:bg-blue-400 hover:text-white rounded"
+            >
+              Travel
+            </button>
+            <button
+              class="mt-5 py-2 px-7 text-gray-500 hover:bg-blue-400 hover:text-white rounded"
+            >
+              resturant
+            </button>
+            <button
+              class="mt-5 py-2 px-7 text-gray-500 hover:bg-blue-400 hover:text-white rounded"
+            >
+              Lifestyle
+            </button>
+            <button
+              class="mt-5 py-2 px-7 text-gray-500 hover:bg-blue-400 hover:text-white rounded"
+            >
+              design
+            </button>
+            <button
+              class="mt-5 py-2 px-7 text-gray-500 hover:bg-blue-400 hover:text-white rounded"
+            >
+              illustration
+            </button>
+          </div>
+        </div>
+        <!-- finish (tag cloud) -->
+
+        <!-- instagram feed -->
+        <div class="w-full mt-20">
+          <h1 class="font-semibold">Instagram Feed</h1>
+          <div class="w-full flex gap-5 flex-wrap mt-10">
+            <img src="images/blog1.webp" class="w-24 h-24 mt-5" />
+            <img src="images/blog2.webp" class="w-24 h-24 mt-5" />
+            <img src="images/blog3.webp" class="w-24 h-24 mt-5" />
+            <img src="images/blog4.webp" class="w-24 h-24 mt-5" />
+            <img src="images/blog5.webp" class="w-24 h-24 mt-5" />
+            <img src="images/samiling-man.webp" class="w-24 h-24 mt-5" />
+          </div>
+        </div>
+        <!-- finish (instagram) -->
+
+        <!-- Newsellter -->
+        <div class="w-full mt-20">
+          <h1 class="font-semibold">Newsletter</h1>
+          <input
+            type="text"
+            class="w-full focus:border-transparent focus:outline-none mt-20 h-16"
+            placeholder="Enter Email"
+          />
+          <button
+            class="w-full mt-10 text-blue-400 py-3 border-blue-400 border-solid border-2 hover:text-white hover:bg-blue-400"
+          >
+            SUBSCRIBE
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="w-full p-5 mt-20 flex-wrap flex justify-evenly items-center">
+      <div class="w-60 mt-5 h-72 bg-white">
+        <div class="flex gap-2 items-center">
+          <button class="w-10 h-10 rounded-full bg-blue-400">
+            <i class="fa-solid fa-house text-white"></i>
+          </button>
+          <h1 class="text-xl font-semibold">Finloans</h1>
+        </div>
+        <h3 class="text-gray-400 text-sm mt-5">
+          finloan@support.com<br />
+          +10 873 672 6782<br />
+          600/D, Green road, NewYork
+        </h3>
+      </div>
+
+      <div class="p-5 mt-5 h-72 w-40 bg-white">
+        <h1 class="font-semibold">Services</h1>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5">SEO/SEM</a>
+        </div>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5">Web design</a>
+        </div>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5">Ecommerce</a>
+        </div>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5 text-sm"
+            >Digital marketing</a
+          >
+        </div>
+      </div>
+
+      <div class="p-5 mt-5 h-72 w-40 bg-white">
+        <h1 class="font-semibold">Services</h1>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5">About</a>
+        </div>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5">Blog</a>
+        </div>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5">contact</a>
+        </div>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5">Support</a>
+        </div>
+      </div>
+
+      <div class="lg:w-[30vw] h-72 bg-white mt-5 p-5">
+        <h1 class="font-semibold">Subcribe</h1>
+        <div class="flex mt-5 justify-between">
+          <input
+            type="text"
+            class="mt-5 rounded h-8 w-28"
+            placeholder="Enter your mail....."
+          />
+          <button class="bg-blue-400 px-5 py-0 rounded text-white">
+            subscribe
+          </button>
+        </div>
+        <p class="mt-5 text-gray-500 text-sm">
+          Esteem spirit temper too say adieus who direct esteem esteems luckily.
+        </p>
+      </div>
+
+      <p class="mt-20 text-gray-500">
+        Copyright ©2024 All rights reserved | This template is made with
+        <i class="fa-regular fa-heart"></i> by Colorlib
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="aboutscript.js"></script>
+  </body>
+</html>

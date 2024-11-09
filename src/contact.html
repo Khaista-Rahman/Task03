@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="extra.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Large Screen Navbar -->
+    <header
+      id="navbar-lg"
+      class="hidden lg:block transform -translate-y-full fixed top-0 w-full bg-blue-950/50 z-50 transition-transform duration-500"
+    >
+      <nav class="w-full h-16 flex justify-between items-center">
+        <div class="flex gap-3 items-center">
+          <button class="w-10 h-10 rounded-full bg-blue-400">
+            <i class="fa-solid fa-house text-white"></i>
+          </button>
+          <h1 class="text-white text-xl">Finloan</h1>
+        </div>
+        <div id="navBarTool" class="w-1/2 flex justify-evenly items-center">
+          <a href="index.html" class="ml-5 text-white font-bold text-sm"
+            >Home</a
+          >
+          <a href="#" class="ml-5 text-white font-bold text-sm">Loan</a>
+          <a href="about.html" class="ml-5 text-white font-bold text-sm"
+            >About</a
+          >
+          <div class="relative inline-block group">
+            <h1 class="font-bold cursor-pointer text-sm text-white">Pages</h1>
+
+            <div
+              class="w-28 absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+            >
+              <a href="Apply.html" class="text-blue-800 hover:text-red-600"
+                >Apply Loan</a
+              >
+              <a href="Element.html" class="text-blue-800 hover:text-red-600"
+                >Elements</a
+              >
+            </div>
+          </div>
+          <div class="relative inline-block group">
+            <h1 class="font-bold cursor-pointer text-sm text-white">Blog</h1>
+
+            <div
+              class="w-[80px] absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+            >
+              <a href="Blog.html" class="text-blue-800 hover:text-red-600"
+                >Blog</a
+              >
+              <a href="single.html" class="text-blue-800 hover:text-red-600"
+                >Single-Blog</a
+              >
+            </div>
+          </div>
+          <a href="FAQ.html" class="ml-5 text-white font-bold text-sm">FAQ</a>
+          <a href="contact.html" class="ml-5 text-white font-bold text-sm"
+            >CONTACT</a
+          >
+        </div>
+        <div class="flex gap-2 items-center">
+          <h2 class="text-white text-sm">
+            <i class="fa-solid fa-phone text-blue-400"></i> +10 673 567 367
+          </h2>
+          <button
+            class="border-2 border-blue-400 border-solid text-blue-200 hover:bg-blue-400 hover:text-white py-2 px-6 rounded"
+          >
+            Apply For A Loan
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Small Screen Navbar -->
+    <header
+      id="navbar-sm"
+      class="lg:hidden transform -translate-y-full fixed top-0 w-full bg-white z-50 transition-transform duration-500"
+    >
+      <nav class="w-full bg-gray-600 h-16 flex justify-between items-center">
+        <div class="flex gap-3 items-center">
+          <button class="w-10 h-10 rounded-full bg-blue-400">
+            <i class="fa-solid fa-house text-white"></i>
+          </button>
+          <h1 class="text-white text-xl">Finloan</h1>
+        </div>
+        <menu>
+          <div class="fixedMenu" id="fixedMenu">
+            <i class="fa-solid fa-bars text-white"></i>
+          </div>
+          <div class="fixedMenu-Content" id="fixedMenuContent">
+            <a
+              href="index.html"
+              class="ml-5 hover:text-gray-600 font-bold text-sm"
+              >Home</a
+            >
+            <a href="#" class="ml-5 hover:text-gray-600 font-bold text-sm"
+              >Loan</a
+            >
+            <a
+              href="about.html"
+              class="ml-5 hover:text-gray-600 font-bold text-sm"
+              >About</a
+            >
+            <div class="relative inline-block group">
+              <h1
+                class="font-bold cursor-pointer text-sm hover:text-gray-600 ml-5"
+              >
+                Pages
+              </h1>
+
+              <div
+                class="w-28 absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+              >
+                <a href="Apply.html" class="text-blue-800 hover:text-red-600"
+                  >Apply Loan</a
+                >
+                <a href="Element.html" class="text-blue-800 hover:text-red-600"
+                  >Elements</a
+                >
+              </div>
+            </div>
+            <div class="relative inline-block group">
+              <h1
+                class="font-bold cursor-pointer text-sm hover:text-gray-600 ml-5"
+              >
+                blog
+              </h1>
+
+              <div
+                class="w-28 absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+              >
+                <a href="Blog.html" class="text-blue-800 hover:text-red-600"
+                  >Blog</a
+                >
+                <a href="single.html" class="text-blue-800 hover:text-red-600"
+                  >Single-Blog
+                </a>
+              </div>
+            </div>
+            <a
+              href="FAQ.html"
+              class="ml-5 hover:text-gray-600 font-bold text-sm"
+              >FAQ</a
+            >
+            <a
+              href="contact.html"
+              class="ml-5 hover:text-gray-600 font-bold text-sm"
+              >CONTACT</a
+            >
+          </div>
+        </menu>
+      </nav>
+    </header>
+
+    <!-- container 1 -->
+    <div class="w-full bg-[url(images/contact.jpg)] bg-cover bg-center">
+      <div class="w-full h-full bg-gray-950/30">
+        <!-- navbar for small screen-->
+        <div class="lg:hidden">
+          <nav class="w-full h-16 flex justify-between items-center">
+            <div class="flex gap-2 items-center">
+              <button class="w-10 h-10 rounded-full bg-blue-400">
+                <i class="fa-solid fa-house"></i>
+              </button>
+              <h1 class="text-white text-xl">Finloan</h1>
+            </div>
+            <menu>
+              <div class="menu" id="menu">
+                <i class="fa-solid fa-bars-staggered text-2xl text-white"></i>
+              </div>
+              <div class="menu-content" id="menuContent">
+                <a
+                  href="index.html"
+                  class="ml-5 hover:text-gray-600 font-bold text-sm"
+                  >Home</a
+                >
+                <a href="#" class="ml-5 hover:text-gray-600 font-bold text-sm"
+                  >Loan</a
+                >
+                <a
+                  href="about.html"
+                  class="ml-5 hover:text-gray-600 font-bold text-sm"
+                  >About</a
+                >
+                <div class="relative inline-block group">
+                  <h1
+                    class="font-bold cursor-pointer text-sm hover:text-gray-600 ml-5"
+                  >
+                    Pages
+                  </h1>
+
+                  <div
+                    class="w-28 absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+                  >
+                    <a
+                      href="Apply.html"
+                      class="text-blue-800 hover:text-red-600"
+                      >Apply Loan</a
+                    >
+                    <a
+                      href="Element.html"
+                      class="text-blue-800 hover:text-red-600"
+                      >Elements</a
+                    >
+                  </div>
+                </div>
+                <div class="relative inline-block group">
+                  <h1
+                    class="font-bold cursor-pointer text-sm hover:text-gray-600 ml-5"
+                  >
+                    blog
+                  </h1>
+
+                  <div
+                    class="w-28 absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+                  >
+                    <a href="Blog.html" class="text-blue-800 hover:text-red-600"
+                      >Blog</a
+                    >
+                    <a
+                      href="single.html"
+                      class="text-blue-800 hover:text-red-600"
+                      >Single-Blog
+                    </a>
+                  </div>
+                </div>
+                <a
+                  href="FAQ.html"
+                  class="ml-5 hover:text-gray-600 font-bold text-sm"
+                  >FAQ</a
+                >
+                <a
+                  href="contact.html"
+                  class="ml-5 hover:text-gray-600 font-bold text-sm"
+                  >CONTACT</a
+                >
+              </div>
+            </menu>
+          </nav>
+        </div>
+        <!-- navbar for large screen -->
+        <div class="hidden lg:block">
+          <nav class="w-full h-20 flex justify-between items-center px-5">
+            <div class="flex gap-2 items-center">
+              <button class="w-10 h-10 rounded-full bg-blue-400">
+                <i class="fa-solid fa-house text-white"></i>
+              </button>
+              <h1 class="text-white text-xl">Finloan</h1>
+            </div>
+            <div class="w-1/2 flex justify-evenly items-center">
+              <a href="index.html" class="ml-5 text-white font-bold text-sm"
+                >Home</a
+              >
+              <a href="#" class="ml-5 text-white font-bold text-sm">Loan</a>
+              <a href="about.html" class="ml-5 text-white font-bold text-sm"
+                >About</a
+              >
+              <div class="relative inline-block group">
+                <h1 class="font-bold cursor-pointer text-sm text-white">
+                  Pages
+                </h1>
+
+                <div
+                  class="w-28 absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+                >
+                  <a href="Apply.html" class="text-blue-800 hover:text-red-600"
+                    >Apply Loan</a
+                  >
+                  <a
+                    href="Element.html"
+                    class="text-blue-800 hover:text-red-600"
+                    >Elements</a
+                  >
+                </div>
+              </div>
+              <div class="relative inline-block group">
+                <h1 class="font-bold cursor-pointer text-sm text-white">
+                  Blog
+                </h1>
+
+                <div
+                  class="w-[80px] absolute left-0 mt-2 space-y-1 detail-content opacity-0 transform translate-y-[-20px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:animation-slide-down"
+                >
+                  <a href="Blog.html" class="text-blue-800 hover:text-red-600"
+                    >Blog</a
+                  >
+                  <a href="single.html" class="text-blue-800 hover:text-red-600"
+                    >Single-Blog</a
+                  >
+                </div>
+              </div>
+              <a href="FAQ.html" class="ml-5 text-white font-bold text-sm"
+                >FAQ</a
+              >
+              <a href="contact.html" class="ml-5 text-white font-bold text-sm"
+                >CONTACT</a
+              >
+            </div>
+            <div class="flex gap-2 items-center">
+              <h2 class="text-white text-sm">
+                <i class="fa-solid fa-phone text-blue-400"></i> +10 673 567 367
+              </h2>
+              <button
+                class="border-2 border-blue-400 border-solid text-blue-200 hover:bg-blue-400 hover:text-white py-2 px-6 rounded"
+              >
+                Apply For A Loan
+              </button>
+            </div>
+          </nav>
+        </div>
+
+        <!-- content -->
+        <div class="w-full lg:h-[100vh] lg:flex items-center px-10 py-5">
+          <!-- 1 -->
+          <div class="w-full lg:w-2/5 flex items-center justify-center">
+            <h1 class="text-white text-2xl lg:text-6xl font-extrabold">
+              Contact Us
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- container 2  (contact)-->
+    <div class="w-full mt-20 p-5 flex-wrap lg:flex justify-evenly items-center">
+      <div
+        class="lg:w-1/2 w-full bg-white shadow-md shadow-orange-600 p-5 rounded py-12 mt-5"
+      >
+        <h1 class="font-extrabold">Get in Touch</h1>
+        <input
+          type="text"
+          class="w-full h-32 focus:border-transparent focus:outline-none"
+          placeholder="Enter Message"
+        />
+        <div class="w-full flex-wrap flex justify-between items-center mt-5">
+          <input
+            type="text"
+            class="h-8 focus:border-transparent focus:outline-none mt-5"
+            placeholder="Enter your Name"
+          />
+          <input
+            type="text"
+            class="h-8 focus:border-transparent focus:outline-none mt-5"
+            placeholder="Enter you Email"
+          />
+          <input
+            type="text"
+            class="h-8 focus:border-transparent focus:outline-none mt-5"
+            placeholder="Enter you Subject"
+          />
+        </div>
+        <button
+          class="py-3 px-6 border-2 border-blue-400 border-solid hover:bg-blue-400 text-blue-400 hover:text-white mt-5 rounded"
+        >
+          SEND MESSAGE
+        </button>
+      </div>
+      <div class="w-96 h-96 mt-5 p-5">
+        <div class="flex justify-evenly items-center mt-5">
+          <i class="fa-solid fa-house"></i>
+          <h1>
+            Buttonwood, California.<br />
+            <span class="text-gray-400">Rosemead, CA 91770</span>
+          </h1>
+        </div>
+        <div class="flex justify-evenly items-center mt-5">
+          <i class="fa-solid fa-tablet-screen-button"></i>
+          <h1>
+            00 (440) 9865 562<br />
+            <span class="text-gray-400">Mon to Fri 9am to 6pm</span>
+          </h1>
+        </div>
+        <div class="flex justify-evenly items-center mt-5">
+          <i class="fa-regular fa-envelope"></i>
+          <h1>
+            support@colorlib.com<br />
+            <span class="text-gray-400">Send us your query anytime!</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="w-full p-5 mt-20 flex-wrap flex justify-evenly items-center">
+      <div class="w-60 mt-5 h-72 bg-white">
+        <div class="flex gap-2 items-center">
+          <button class="w-10 h-10 rounded-full bg-blue-400">
+            <i class="fa-solid fa-house text-white"></i>
+          </button>
+          <h1 class="text-xl font-semibold">Finloans</h1>
+        </div>
+        <h3 class="text-gray-400 text-sm mt-5">
+          finloan@support.com<br />
+          +10 873 672 6782<br />
+          600/D, Green road, NewYork
+        </h3>
+      </div>
+
+      <div class="p-5 mt-5 h-72 w-40 bg-white">
+        <h1 class="font-semibold">Services</h1>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5">SEO/SEM</a>
+        </div>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5">Web design</a>
+        </div>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5">Ecommerce</a>
+        </div>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5 text-sm"
+            >Digital marketing</a
+          >
+        </div>
+      </div>
+
+      <div class="p-5 mt-5 h-72 w-40 bg-white">
+        <h1 class="font-semibold">Services</h1>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5">About</a>
+        </div>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5">Blog</a>
+        </div>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5">contact</a>
+        </div>
+        <div class="mt-5">
+          <a href="#" class="text-gray-400 hover:text-black mt-5">Support</a>
+        </div>
+      </div>
+
+      <div class="lg:w-[30vw] h-72 bg-white mt-5 p-5">
+        <h1 class="font-semibold">Subcribe</h1>
+        <div class="flex mt-5 justify-between">
+          <input
+            type="text"
+            class="mt-5 rounded h-8 w-28"
+            placeholder="Enter your mail....."
+          />
+          <button class="bg-blue-400 px-5 py-0 rounded text-white">
+            subscribe
+          </button>
+        </div>
+        <p class="mt-5 text-gray-500 text-sm">
+          Esteem spirit temper too say adieus who direct esteem esteems luckily.
+        </p>
+      </div>
+
+      <p class="mt-20 text-gray-500">
+        Copyright ©2024 All rights reserved | This template is made with
+        <i class="fa-regular fa-heart"></i> by Colorlib
+      </p>
+    </div>
+    <script src="script.js"></script>
+    <script src="aboutscript.js"></script>
+  </body>
+</html>

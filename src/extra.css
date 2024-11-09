@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.fixedMenu {
+  cursor: pointer;
+  color: rgb(89, 88, 88);
+  padding: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.fixedMenu-Content {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: gray;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: height 0.5s ease-in-out;
+}
+
+.fixedMenu-Content a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.menu {
+  cursor: pointer;
+  color: rgb(89, 88, 88);
+  padding: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.menu-content {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: gray;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: height 0.5s ease-in-out;
+}
+
+.menu-content a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+#TwoColors{
+  background: linear-gradient(to bottom, rgb(110, 187, 235), rgb(65, 65, 233));
+
+}
+
+
+      /* Keyframes for the sliding and fading effect */
+      @keyframes slideDown {
+        0% {
+          transform: translateY(-20px); /* Start above */
+          opacity: 0; /* Start invisible */
+        }
+        50% {
+          transform: translateY(0); /* Slide into place */
+          opacity: 1; /* Fade in */
+        }
+        100% {
+          transform: translateY(0); /* Keep in place */
+          opacity: 1; /* Stay visible */
+        }
+      }
+
+      /* Keyframes for hiding the element after 2 seconds */
+      @keyframes slideUp {
+        0% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(-20px); /* Slide back up */
+          opacity: 0; /* Fade out */
+        }
+      }
+
+      /* On hover, slide down and fade in */
+      .group:hover .detail-content {
+        animation: slideDown 2s ease-in-out forwards,
+          slideUp 1s 2s ease-in-out forwards;
+      }
+
+      /* Initial state before hover */
+      .detail-content {
+        animation: none;
+      }
+    
